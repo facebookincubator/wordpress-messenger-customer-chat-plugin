@@ -1,0 +1,132 @@
+/*
+* Copyright 2017-present, Facebook, Inc.
+* All rights reserved.
+*
+* This source code is licensed under the license found in the
+* LICENSE file in the root directory of this source tree.
+*/
+
+.fbmcc-card {
+  background-color: #fff;
+  width: 600px;
+}
+
+.fbmcc-settings {
+  text-align: left;
+}
+
+.fbmcc-instructions,
+.fbmcc-buttonContainer {
+  color: #444444;
+  margin-bottom: 10px;
+}
+
+.fbmcc-code-area {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.fbmcc-setupButton,
+.fbmcc-editButton {
+  background-color: #f7f7f7;
+  border-radius: 4px;
+  box-shadow: 0 1px 0 #aaa;
+  color: #555555;
+}
+
+.fbmcc-codeTitle{
+  float: left;
+}
+
+.fbmcc-setupButton {
+  height: 28px;
+  width: 148px;
+}
+
+.fbmcc-editButton {
+  float: right;
+  height: 28px;
+  position: absolute;
+  right: 5px;
+  top: 15px;
+  width: 88px;
+}
+
+.fbmcc-codeContainer {
+  position: relative;
+}
+
+.fbmcc-setupButton:hover {
+    background-color: #fbfbfb;
+    cursor:pointer;
+}
+
+.fbmcc-setupButton:active {
+  background-color: #eeeeee;
+  transform: translateY(1px);
+}
+
+td {
+  padding: 0 20px 0 20px;
+}
+
+table
+{
+    border-collapse:separate;
+    border-spacing:0 10px;
+}
+
+.fbmcc-switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 17px;
+}
+
+.fbmcc-switch input {display:none;}
+
+.fbmcc-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.fbmcc-slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .fbmcc-slider {
+  background-color: #2196F3;
+}
+
+input:focus + .fbmcc-slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .fbmcc-slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}
+
+.fbmcc-slider.round {
+  border-radius: 17px;
+}
+
+.fbmcc-slider.round:before {
+  border-radius: 50%;
+}

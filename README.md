@@ -1,10 +1,12 @@
-# What is wordpress-messenger-customer-chat-plugin?
+# What is WordPress Messenger Customer Chat Plugin?
 
-`wordpress-messenger-customer-chat-plugin` is Facebook Messenger's customer chat plugin for Wordpress.
+`WordPress Messenger Customer Chat Plugin` is Facebook Messenger's customer chat plugin for Wordpress.
 This is the source code for the plugin which allows you to add a Messenger chat window directly onto
 your website.
 
 You can read more about Messenger customer chat [here](https://developers.facebook.com/docs/messenger-platform/discovery/customer-chat-plugin).
+
+You can download and use the plugin on WordPress [here](https://wordpress.org/plugins/facebook-messenger-customer-chat/).
 
 # Why did we create this?
 
@@ -78,6 +80,12 @@ TODOs and improvements are tracked
 [here](https://github.com/facebookincubator/wordpress-messenger-customer-chat-plugin/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement)
 
 PRs are welcome!
+
+# Contributing
+See the CONTRIBUTING file for how to help out.
+
+# License
+WordPress Messenger Customer Chat Plugin is GPLv2-licensed, as found in the LICENSE file.
 
 # Who wrote it?
 

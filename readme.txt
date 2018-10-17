@@ -69,6 +69,12 @@ The plugin is a snippet of JavaScript code that runs on your WordPress website. 
 = Where can I see all my messages? =
 You can see all messages and responses to your Facebook Page in your Page Inbox. Navigate to your Facebook Page on Facebook and click on 'Inbox' at the top.
 
+= What permissions do I need on a Page to enable the Messenger customer chat feature? =
+You need be an administrator of the Page.
+
+= Why are some of my users seeing an additional confirmation window after clicking "Chat Now"? =
+A "Continue As" popup is shown infrequently for security purposes. Most signed-in users will only have to click the plugin itself to opt in, without having to re-confirm. Additionally, as more users message you via the plugin, the "Continue As" popup will be shown less often.
+
 = Can I see messaging analytics for my Facebook page? =
 You can see all messages and responses to your Facebook Page in your Page Inbox. Additionally, you can view analytics for your Facebook Page in Page Analytics or via Facebook Analytics. You can learn more about Page Analytics [here](https://developers.facebook.com/docs/analytics/getting-started/pages). If you want more insights on your Facebook Page, visit Page Insights [here](https://www.facebook.com/business/a/page/page-insights).
 

@@ -12,10 +12,6 @@
 */
 
 function fbmcc_setupCustomerChat() {
-  const WRONG_ORIGIN_ERROR_MSG =
-    "ERROR:\n"
-    + "Message origin is not from https://www.facebook.com.\n"
-    + "Code gen aborted.";
   const FACEBOOK_URL = "https://www.facebook.com";
   var baseURL = "https://www.facebook.com/customer_chat/dialog/?domain=";
   var urlParam = encodeURI(
@@ -56,27 +52,26 @@ function fbmcc_setupCustomerChat() {
           jQuery('#fbmcc-enabled').prop('checked', true);
         }
       });
-    } else {
-      jQuery('#fbmcc-codeArea').val(WRONG_ORIGIN_ERROR_MSG);
-    };
+    }
   });
 }
 
 function fbmcc_genScript( pageID, locale, themeColor, greetingText ) {
+  const hasGreeting = (greetingText === null || greetingText === undefined );
   return `<div id='fb-root'></div>
   <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/${locale}/sdk.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+    js.src = 'https://connect.facebook.net/${locale}/sdk/xfbml.customerchat.js&autoLogAppEvents=1';
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));</script>
   <div class='fb-customerchat'
     attribution="wordpress"
     page_id='${pageID}'
     ${themeColor === null ? '' : `theme_color='${themeColor}'`}
-    ${greetingText === null ? '' : `logged_in_greeting='${greetingText}'`}
-    ${greetingText === null ? '' : `logged_out_greeting='${greetingText}'`}
+    ${hasGreeting ? '' : `logged_in_greeting='${greetingText}'`}
+    ${hasGreeting ? '' : `logged_out_greeting='${greetingText}'`}
   >
 </div>`;
 }

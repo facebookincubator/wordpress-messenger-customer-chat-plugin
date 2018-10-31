@@ -3,7 +3,7 @@ Contributors: facebook
 Tags: Facebook, Messenger, Customer Care, Chat, Messaging
 Requires at least: 3.9
 Tested up to: 4.9.8
-Stable tag: 1.0
+Stable tag: 1.1
 Requires PHP: 5.2.4
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -78,6 +78,9 @@ A "Continue As" popup is shown infrequently for security purposes. Most signed-i
 = Can I see messaging analytics for my Facebook page? =
 You can see all messages and responses to your Facebook Page in your Page Inbox. Additionally, you can view analytics for your Facebook Page in Page Analytics or via Facebook Analytics. You can learn more about Page Analytics [here](https://developers.facebook.com/docs/analytics/getting-started/pages). If you want more insights on your Facebook Page, visit Page Insights [here](https://www.facebook.com/business/a/page/page-insights).
 
+= The Messenger customer chat plugin is not working on mobile? =
+We have temporarily disabled Messenger customer chat plugin on Safari 12 while we work to resolve issues.
+
 = Where can I find support? =
 If you get stuck, or have any questions, you can ask for help in the [Messenger Customer Chat plugin forum](https://wordpress.org/support/plugin/facebook-messenger-customer-chat). If you would like to file a bug, please use the Facebook Bug tool found [here](https://developers.facebook.com/support/bugs/).
 
@@ -86,9 +89,14 @@ Of course! This plugin is open sourced on the Facebook Incubator GitHub. You can
 
 == Changelog ==
 
+= 1.1 - October 31, 2018 =
+* Updated plugin to use new Facebook JS SDK
+* Fix: Error message in code snippet.
+
 = 1.0 - September 24, 2018 =
 * Plugin released for all users
 
 == Upgrade Notice ==
 
-No upgrades at this time.
+= 1.1 =
+* Upgraded plugin to use new Facebook JS SDK and minor bug fixes.

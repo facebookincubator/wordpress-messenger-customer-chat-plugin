@@ -57,21 +57,21 @@ function fbmcc_setupCustomerChat() {
 }
 
 function fbmcc_genScript( pageID, locale, themeColor, greetingText ) {
-  const hasGreeting = (greetingText === null || greetingText === undefined );
+  const hasNoGreeting = (greetingText === null || greetingText === undefined );
   return `<div id='fb-root'></div>
   <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/${locale}/sdk/xfbml.customerchat.js&autoLogAppEvents=1';
+    js.src = 'https://connect.facebook.net/${locale}/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));</script>
   <div class='fb-customerchat'
     attribution="wordpress"
     page_id='${pageID}'
     ${themeColor === null ? '' : `theme_color='${themeColor}'`}
-    ${hasGreeting ? '' : `logged_in_greeting='${greetingText}'`}
-    ${hasGreeting ? '' : `logged_out_greeting='${greetingText}'`}
+    ${hasNoGreeting ? '' : `logged_in_greeting='${greetingText}'`}
+    ${hasNoGreeting ? '' : `logged_out_greeting='${greetingText}'`}
   >
 </div>`;
 }

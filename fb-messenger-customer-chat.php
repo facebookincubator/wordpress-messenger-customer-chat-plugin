@@ -4,7 +4,7 @@ Plugin Name: Messenger Customer Chat
 Description: Messenger Customer Chat is the official free Messenger customer chat plugin for WordPress by Facebook. This plugin allows you to interact with your customers using Messenger by integrating it on your WordPress website in three simple steps. To get started, go to your Wordpress Dashboard -> Customer Chat -> click on "Setup Customer Chat."
 Author: Facebook
 Author URI: https://developers.facebook.com
-Version: 1.1
+Version: 1.2
 
 * Copyright (C) 2017-present, Facebook, Inc.
 *

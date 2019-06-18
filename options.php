@@ -46,6 +46,7 @@ add_action( 'admin_menu', function() {
 });
 
 add_action( 'admin_enqueue_scripts', 'fbmcc_add_styles' );
+add_action( 'admin_enqueue_scripts', 'fmcc_localize_ajax' );
 
 add_action( 'admin_init', function() {
   register_setting( 'messenger-integration-plugin-settings', 'fbmcc_enabled' );
@@ -55,6 +56,7 @@ add_action( 'admin_init', function() {
 add_action( 'wp_ajax_update_options', 'fbmcc_update_options');
 
 function fbmcc_update_options() {
+  check_ajax_referer( 'update_fmcc_code' );
   update_option( 'fbmcc_enabled', "1" );
   update_option( 'fbmcc_generatedCode', sanitize_textarea_field( $_POST['fbmcc_generatedCode'] ) );
   wp_die();
@@ -68,6 +70,16 @@ function fbmcc_add_styles() {
     '1.0',
     'all'
   );
+}
+
+function fmcc_localize_ajax() {
+  $ajax_object = array(
+    'nonce' => wp_create_nonce( 'update_fmcc_code' )
+  );
+
+  wp_register_script( 'code_script', plugin_dir_url( __FILE__ ) . 'script.js' );
+  wp_localize_script( 'code_script', 'ajax_object', $ajax_object );
+  wp_enqueue_script( 'code_script' );
 }
 
 function fbmcc_integration_settings() {

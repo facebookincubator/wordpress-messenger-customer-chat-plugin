@@ -35,6 +35,7 @@ function fbmcc_setupCustomerChat() {
         'locale' : fbmcc_sanitizeLocale($data_json["locale"]),
         'themeColor' : fbmcc_sanitizeHexColor($data_json["themeColorCode"]),
         'greetingText' : $data_json["greetingTextCode"],
+        '_wpnonce' : ajax_object.nonce,
       };
       data.generatedCode = fbmcc_genScript(
         data.pageID,

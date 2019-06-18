@@ -2,8 +2,8 @@
 Contributors: facebook
 Tags: Facebook, Messenger, Customer Care, Chat, Messaging
 Requires at least: 3.9
-Tested up to: 5.1
-Stable tag: 1.2
+Tested up to: 5.2.1
+Stable tag: 1.3
 Requires PHP: 5.2.4
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -86,7 +86,11 @@ Of course! This plugin is open sourced on the Facebook Incubator GitHub. You can
 
 == Changelog ==
 
-= 1.2 - February 28, 2018 =
+= 1.3 - June 17, 2019 =
+* Tested up to WordPress 5.2.1
+* Fixed security issue
+
+= 1.2 - February 28, 2019 =
 * Tested up to WordPress 5.1
 * Fixed issues with Safari
 * Fix: Edge case where multiple SDK loaded on the page resulting with plugin not loading
@@ -99,6 +103,9 @@ Of course! This plugin is open sourced on the Facebook Incubator GitHub. You can
 * Plugin released for all users
 
 == Upgrade Notice ==
+
+= 1.3 =
+* Fix security issue
 
 = 1.2 =
 * Handle edge case which resulted in plugin being broken for some users.

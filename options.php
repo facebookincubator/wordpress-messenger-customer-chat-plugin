@@ -64,7 +64,7 @@ function fbmcc_update_options() {
 
 function fbmcc_add_styles() {
   wp_enqueue_style(
-    'admin-styles',
+    'wordpress-messenger-chat-plugin-admin-styles',
     plugins_url( '/settings.css', __FILE__ ),
     false,
     '1.0',

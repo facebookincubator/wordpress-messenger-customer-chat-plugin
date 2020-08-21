@@ -53,7 +53,7 @@ add_action( 'admin_init', function() {
   register_setting( 'messenger-integration-plugin-settings', 'fbmcc_generatedCode' );
 });
 
-add_action( 'wp_ajax_update_options', 'fbmcc_update_options');
+add_action( 'wp_ajax_fbmcc_update_options', 'fbmcc_update_options');
 
 function fbmcc_update_options() {
   check_ajax_referer( 'update_fmcc_code' );

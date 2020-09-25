@@ -48,23 +48,37 @@ add_action( 'admin_menu', function() {
 add_action( 'admin_enqueue_scripts', 'fbmcc_add_styles' );
 add_action( 'admin_enqueue_scripts', 'fmcc_localize_ajax' );
 
-add_action( 'admin_init', function() {
-  register_setting( 'messenger-integration-plugin-settings', 'fbmcc_enabled' );
-  register_setting( 'messenger-integration-plugin-settings', 'fbmcc_generatedCode' );
-});
-
-add_action( 'wp_ajax_fbmcc_update_options', 'fbmcc_update_options');
+add_action( 'wp_ajax_update_options', 'fbmcc_update_options');
 
 function fbmcc_update_options() {
-  check_ajax_referer( 'update_fmcc_code' );
-  update_option( 'fbmcc_enabled', "1" );
-  update_option( 'fbmcc_generatedCode', sanitize_textarea_field( $_POST['fbmcc_generatedCode'] ) );
+
+  if ( current_user_can( 'manage_options' ) ) {
+    check_ajax_referer( 'update_fmcc_code' );
+    update_option( 'fbmcc_pageID', fbmcc_sanitize_page_id($_POST['pageID']));
+    update_option( 'fbmcc_locale', fbmcc_sanitize_locale($_POST['locale']));
+  }
   wp_die();
+}
+
+function fbmcc_sanitize_page_id($input) {
+  if ( preg_match('/^\d+$/', $input) ) {
+    return $input;
+  } else {
+    return '';
+  }
+}
+
+function fbmcc_sanitize_locale($input) {
+  if ( preg_match('/^[A-Za-z_]{4,5}$/', $input) ){
+    return $input;
+  } else {
+    return '';
+  }
 }
 
 function fbmcc_add_styles() {
   wp_enqueue_style(
-    'wordpress-messenger-chat-plugin-admin-styles',
+    'admin-styles',
     plugins_url( '/settings.css', __FILE__ ),
     false,
     '1.0',
@@ -73,31 +87,34 @@ function fbmcc_add_styles() {
 }
 
 function fmcc_localize_ajax() {
-  $ajax_object = array(
-    'nonce' => wp_create_nonce( 'update_fmcc_code' )
-  );
 
-  wp_register_script( 'code_script', plugin_dir_url( __FILE__ ) . 'script.js' );
-  wp_localize_script( 'code_script', 'ajax_object', $ajax_object );
-  wp_enqueue_script( 'code_script' );
+  if ( current_user_can( 'manage_options' ) ) {
+    $ajax_object = array(
+      'nonce' => wp_create_nonce( 'update_fmcc_code' )
+    );
+
+    wp_register_script( 'code_script', plugin_dir_url( __FILE__ ) . 'script.js' );
+    wp_localize_script( 'code_script', 'ajax_object', $ajax_object );
+    wp_enqueue_script( 'code_script' );
+  }
+
 }
 
 function fbmcc_integration_settings() {
   ?>
   <div class="wrap">
-    <form action="options.php" method="post">
-      <h2>Messenger Customer Chat Settings</h2>
-      <?php
-        settings_fields( 'messenger-integration-plugin-settings' );
-        do_settings_sections( 'messenger-integration-plugin-settings' );
-      ?>
+      <h2>Facebook Chat Plugin Settings</h2>
       <div class="fbmcc-card card">
         <div class="intro">
           <div>
             <h2>Getting Started?</h2>
-            <p class="fbmcc-instructions">Let people start a conversation on your
-              website and continue in Messenger. It's easy to set up. We'll
-              give you the code to add to your website.</p>
+            <p class="fbmcc-instructions">Let people start a conversation on
+              your website and continue in Messenger. It's easy to set up. Chats
+              started on your website can be continued in the customers'
+              Messenger app, so you never lose connections with your customers.
+              Even those without a Facebook Messenger account can chat with you
+              in guest mode, so you can reach more customers than ever.
+            </p>
           </div>
           <div class="fbmcc-buttonContainer">
             <button
@@ -106,10 +123,10 @@ function fbmcc_integration_settings() {
               onclick="fbmcc_setupCustomerChat()"
             >
               <?php
-                if( get_option( 'fbmcc_generatedCode' ) == "" ) {
-                  _e( 'Setup Customer Chat' );
+                if( get_option( 'fbmcc_pageID' ) == "" ) {
+                  _e( 'Setup Chat Plugin' );
                 } else {
-                  _e( 'Edit Customer Chat' );
+                  _e( 'Edit Chat Plugin' );
                 }
               ?>
             </button>
@@ -119,70 +136,28 @@ function fbmcc_integration_settings() {
       <div
         id="fbmcc-page-params"
         class="fbmcc-card card"
-        <?php if( get_option( 'fbmcc_generatedCode' ) == "" ) {
+        <?php if( get_option( 'fbmcc_pageID' ) == "" ) {
           _e( 'style="display:none;"' );
         } ?>>
         <div>
-          <p class="fbmcc-instructions">The code has already been added into your
-            website. You can always go back through the setup process or edit
-            the code manually below.
+          <p class="fbmcc-instructions">The plugin code has already been added
+            into your website. You can always go back through the setup process
+            to customize the plugin.
           </p>
         </div>
-        <table class="fbmcc-settings">
-          <tr valign="top">
-            <th scope="row">Enabled</th>
-            <td class="fbmcc-table-container">
-              <div>
-                <label class="fbmcc-switch">
-                  <input
-                    id="fbmcc-enabled"
-                    value="1"
-                    name="fbmcc_enabled"
-                    type="checkbox"
-                    <?php checked( '1', get_option( 'fbmcc_enabled' ) ); ?>
-                  >
-                  <span class="fbmcc-slider round"></span>
-                </label>
-              </div>
-            </td>
-          </tr>
-          <tr valign="top">
-            <th scope="row">Code Snippet</th>
-          </tr>
-        </table>
-        <div class="fbmcc-codeContainer">
-          <button id="fbmcc-editButton"
-            class="fbmcc-editButton"
-            type="button"
-            onclick="fbmcc_editCode()"
-          >
-            Edit Code
-          </button>
-          <textarea
-            id="fbmcc-codeArea"
-            name="fbmcc_generatedCode"
-            class="fbmcc-code-area"
-            rows="17"
-            cols="70"
-            readonly="true"
-          ><?php esc_html_e( stripslashes( get_option( 'fbmcc_generatedCode' ) ) ); ?>
-          </textarea>
-        </div>
-        <?php submit_button(); ?>
       </div>
-    </form>
     <div class="fbmcc-card card">
       <div class="intro">
-        <p class="fbmcc-instructions"> Having a problem with Messenger customer chat?
+        <p class="fbmcc-instructions">
+          Use of this plugin is subject to <a href='https://developers.facebook.com/policy/'>Facebook's Platform Policies</a><br><br>
+          Having a problem with the Chat Plugin?
           Report the issue on the <a
             href='https://developers.facebook.com/support/bugs/'
             target='_blank'>
-            Facebook Platform Bug Reports</a> page. If you get stuck or have questions,
-            you can ask for help in the
-            <a
-            href='https://wordpress.org/support/plugin/facebook-messenger-customer-chat'
-            target='_blank'>
-            Messenger Customer Chat plugin forum</a>.
+            Facebook Platform Bug Reports</a> page. If you get stuck or have
+            questions, you can ask for help in the
+            <a href='https://www.facebook.com/groups/messengerplatform'
+            target='_blank'>Messenger Platform Developer Community</a>.
         </p>
       </div>
     </div>

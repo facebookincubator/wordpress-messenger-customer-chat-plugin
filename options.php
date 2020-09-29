@@ -48,7 +48,7 @@ add_action( 'admin_menu', function() {
 add_action( 'admin_enqueue_scripts', 'fbmcc_add_styles' );
 add_action( 'admin_enqueue_scripts', 'fmcc_localize_ajax' );
 
-add_action( 'wp_ajax_update_options', 'fbmcc_update_options');
+add_action( 'wp_ajax_fbmcc_update_options', 'fbmcc_update_options');
 
 function fbmcc_update_options() {
 
@@ -78,7 +78,7 @@ function fbmcc_sanitize_locale($input) {
 
 function fbmcc_add_styles() {
   wp_enqueue_style(
-    'admin-styles',
+    'fbmcc-admin-styles',
     plugins_url( '/settings.css', __FILE__ ),
     false,
     '1.0',
@@ -93,7 +93,8 @@ function fmcc_localize_ajax() {
       'nonce' => wp_create_nonce( 'update_fmcc_code' )
     );
 
-    wp_register_script( 'code_script', plugin_dir_url( __FILE__ ) . 'script.js' );
+    wp_register_script( 'code_script',
+                        plugin_dir_url( __FILE__ ) . 'script.js' );
     wp_localize_script( 'code_script', 'ajax_object', $ajax_object );
     wp_enqueue_script( 'code_script' );
   }
@@ -149,13 +150,13 @@ function fbmcc_integration_settings() {
     <div class="fbmcc-card card">
       <div class="intro">
         <p class="fbmcc-instructions">
-          Use of this plugin is subject to <a href='https://developers.facebook.com/policy/'>Facebook's Platform Policies</a><br><br>
-          Having a problem with the Chat Plugin?
-          Report the issue on the <a
-            href='https://developers.facebook.com/support/bugs/'
-            target='_blank'>
-            Facebook Platform Bug Reports</a> page. If you get stuck or have
-            questions, you can ask for help in the
+          Use of this plugin is subject to
+          <a href='https://developers.facebook.com/policy/'>
+            Facebook's Platform Policies</a><br><br>
+            Having a problem with the Chat Plugin? Report the issue on the
+            <a href='https://developers.facebook.com/support/bugs/'
+            target='_blank'>Facebook Platform Bug Reports</a> page.
+            If you get stuck or have questions, you can ask for help in the
             <a href='https://www.facebook.com/groups/messengerplatform'
             target='_blank'>Messenger Platform Developer Community</a>.
         </p>

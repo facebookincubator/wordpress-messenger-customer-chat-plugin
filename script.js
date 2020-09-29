@@ -30,7 +30,7 @@ function fbmcc_setupCustomerChat() {
     if (e.originalEvent.origin === FACEBOOK_URL) {
       $data_json = JSON.parse(e.originalEvent.data);
       var data = {
-        'action' : 'update_options',
+        'action' : 'fbmcc_update_options',
         'pageID' : fbmcc_sanitizeNumbersOnly($data_json["pageID"]),
         'locale' : fbmcc_sanitizeLocale($data_json["locale"]),
         '_wpnonce' : ajax_object.nonce,

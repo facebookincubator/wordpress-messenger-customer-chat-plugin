@@ -149,17 +149,20 @@ function fbmcc_integration_settings() {
       </div>
     <div class="fbmcc-card card">
       <div class="intro">
-        <p class="fbmcc-instructions">
-          Use of this plugin is subject to
-          <a href='https://developers.facebook.com/policy/'>
-            Facebook's Platform Policies</a><br><br>
-            Having a problem with the Chat Plugin? Report the issue on the
-            <a href='https://developers.facebook.com/support/bugs/'
-            target='_blank'>Facebook Platform Bug Reports</a> page.
-            If you get stuck or have questions, you can ask for help in the
-            <a href='https://www.facebook.com/groups/messengerplatform'
-            target='_blank'>Messenger Platform Developer Community</a>.
-        </p>
+          <p class="fbmcc-instructions">
+              Use of this plugin is subject to
+              <a href='https://developers.facebook.com/terms/'>
+                  Facebook's Platform Terms</a><br><br>
+              Having a problem setting up or using the Chat Plugin?<br>
+          <ul>
+              <li>Please consult our <a href='https://www.facebook.com/business/help/789975831794468'>
+                      Troubleshooting Guide.</a>
+              </li>
+              <li>If the troubleshooting steps in the guide do not solve your problem, please post in the plugin <a href='https://wordpress.org/support/plugin/facebook-messenger-customer-chat/'>
+                      support forum.</a>
+              </li>
+          </ul>
+          </p>
       </div>
     </div>
   </div>

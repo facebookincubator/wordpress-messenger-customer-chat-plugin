@@ -2,8 +2,8 @@
 Contributors: facebook
 Tags: Facebook, Messenger, Customer Care, Chat, Messaging, Chat Plugin
 Requires at least: 3.9
-Tested up to: 5.5.1
-Stable tag: 1.8
+Tested up to: 5.5.3
+Stable tag: 1.9
 Requires PHP: 5.2.4
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -84,9 +84,14 @@ You need be an administrator of the Page.
 On the desktop, go to your Facebook page, and click on Insights on the Navigation bar. On the left hand side, click on Messaging to see your messaging analytics.
 
 = Where can I find support? =
+Please refer to our [troubleshooting guide](https://www.facebook.com/business/help/789975831794468) for the most common issues and how to resolve them.
 If you get stuck, or have any questions, you can ask for help in the [Messenger Platform Developer Community](https://www.facebook.com/groups/messengerplatform). If you would like to file a bug, please use the Facebook Bug tool found [here](https://developers.facebook.com/support/bugs/).
 
 == Changelog ==
+
+= 1.9 - Nov 3, 2020 =
+* Tested up to WordPress 5.5.3
+* Added troubleshooting links in plugin settings page and faq's
 
 = 1.8 - Sept 28, 2020 =
 * Tested up to WordPress 5.5.1
@@ -123,6 +128,9 @@ If you get stuck, or have any questions, you can ask for help in the [Messenger 
 * Plugin released for all users
 
 == Upgrade Notice ==
+
+= 1.9 =
+* Added troubleshooting links in plugin settings page and faq's. Tested up to WordPress 5.5.3
 
 = 1.8 =
 * Added instruction links in plugin install page. Tested up to WordPress 5.5.1

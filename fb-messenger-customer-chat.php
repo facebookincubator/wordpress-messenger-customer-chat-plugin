@@ -32,8 +32,8 @@ class Facebook_Messenger_Customer_Chat {
     if ( current_user_can( 'manage_options' ) ) {
       $base = plugin_basename(__FILE__);
       if ( $file == $base ) {
-        $settings_link = '<a href="admin.php?
-          page=messenger-customer-chat-plugin">Settings</a>';
+        $settings_link = '<a href="admin.php?'.
+          'page=messenger-customer-chat-plugin">Settings</a>';
         array_unshift( $links, $settings_link );
       }
     }
@@ -44,16 +44,16 @@ class Facebook_Messenger_Customer_Chat {
     $base = plugin_basename(__FILE__);
     if ( $file == $base ) {
       if ( current_user_can( 'manage_options' ) ) {
-        $links[] = '<a href="admin.php?page=messenger-customer-chat-plugin">
-          Settings</a>';
+        $links[] = '<a href="admin.php?page=messenger-customer-chat-plugin">'.
+          'Settings</a>';
       }
       $links[] =
-        '<a href=
-          "https://wordpress.org/plugins/facebook-messenger-customer-chat/#faq"
-          target="_blank">FAQ</a>';
+        '<a href='.
+          '"https://wordpress.org/plugins/facebook-messenger-customer-chat/#faq"'.
+          'target="_blank">FAQ</a>';
       $links[] =
-        '<a href="https://wordpress.org/support/plugin/facebook-messenger-customer-chat/"
-        target="_blank">Support</a>';
+        '<a href="https://wordpress.org/support/plugin/facebook-messenger-customer-chat/"'.
+        'target="_blank">Support</a>';
     }
     return $links;
   }

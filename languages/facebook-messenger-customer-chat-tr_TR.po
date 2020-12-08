@@ -1,0 +1,110 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Official Facebook Chat Plugin\n"
+"POT-Creation-Date: 2020-11-13 16:39-0800\n"
+"PO-Revision-Date: 2020-12-02 21:31-0800\n"
+"Language-Team: Facebook\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__\n"
+"Last-Translator: \n"
+"Language: tr_TR\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: facebook-messenger-customer-chat.php:44
+#: facebook-messenger-customer-chat.php:61
+msgid "Settings"
+msgstr "Ayarlar"
+
+#: facebook-messenger-customer-chat.php:68
+msgid "FAQ"
+msgstr "SSS"
+
+#: facebook-messenger-customer-chat.php:74
+msgid "Support"
+msgstr "Destek"
+
+#: options.php:107
+msgid "Facebook Chat Plugin Settings"
+msgstr "Facebook Sohbet Eklentisi Ayarları"
+
+#: options.php:111
+msgid "Getting Started?"
+msgstr "Kullanmaya Başlama"
+
+#: options.php:112
+msgid ""
+"Let people start a conversation on your website and continue in Messenger. "
+"It's easy to set up. Chats started on your website can be continued in the "
+"customers' Messenger app, so you never lose connections with your customers. "
+"Even those without a Facebook Messenger account can chat with you in guest "
+"mode, so you can reach more customers than ever."
+msgstr ""
+"İnsanların internet sitenizde bir konuşma başlatmasına ve bu konuşmayı "
+"Messenger'da sürdürmesine imkan sunun. Kurulumu kolaydır. İnternet sitenizde "
+"başlatılan sohbetlere müşterilerin Messenger uygulamasında devam "
+"edebilirsiniz. Böylece müşterilerinizle bağlantınızı asla kaybetmezsiniz. "
+"Facebook Messenger hesabı olmayan kişiler bile, sizinle konuk modunda sohbet "
+"edebilir. Böylece her zamankinden daha fazla müşteriye erişebilirsiniz."
+
+#: options.php:128
+msgid "Setup Chat Plugin"
+msgstr "Sohbet Eklentisini Kurma"
+
+#: options.php:130
+msgid "Edit Chat Plugin"
+msgstr "Sohbet Eklentisini Düzenleme"
+
+#: options.php:144
+msgid ""
+"The plugin code has already been added into your website. You can always go "
+"back through the setup process to customize the plugin."
+msgstr ""
+"Eklenti kodu zaten internet sitenize eklenmiş. İstediğiniz zaman kurulum "
+"sürecine dönerek eklentiyi özelleştirebilirsiniz."
+
+#: options.php:153
+msgid "Use of this plugin is subject to Facebook's Platform Terms"
+msgstr "Bu eklentinin kullanımı Facebook'un Platform Koşulları'na tabidir"
+
+#: options.php:156
+msgid "Having a problem setting up or using the Chat Plugin?"
+msgstr ""
+"Sohbet Eklentisini kurma veya kullanma konusunda sorun mu yaşıyorsunuz?"
+
+#: options.php:158
+msgid "Please consult our Troubleshooting Guide."
+msgstr "Lütfen Sorun Giderme Kılavuzumuza başvurun."
+
+#: options.php:161
+msgid ""
+"If the troubleshooting steps in the guide do not solve your problem, please "
+"post in the plugin support forum."
+msgstr ""
+"Kılavuzdaki bu sorun giderme adımları sorununuzu çözmüyorsa, lütfen eklenti "
+"destek forumunda paylaşım yapın."
+
+msgid ""
+"With a few clicks, you can add the Facebook Chat Plugin to your website, "
+"enabling customers to message you while browsing your website. To see and "
+"reply to those messages, simply use the same messaging tools you use for "
+"your Facebook messaging, on desktop at facebook.com, Facebook Page Manager "
+"App (available on iOS and Android), or by adding your page account to "
+"Messenger. It's free, easy to install and comes with a user interface your "
+"customers are already familiar with."
+msgstr ""
+"Sadece birkaç tıklamayla Facebook Sohbet Eklentisini internet sitenize "
+"ekleyebilir ve müşterilerin internet sitenizde gezerken size mesaj "
+"göndermesini sağlayabilirsiniz. Bu mesajları görmek ve yanıtlamak için "
+"facebook.com adresinde, Facebook Sayfa Yöneticisi Uygulaması'nda (iOS ve "
+"Android'de kullanılabilir) veya sayfa hesabınızı Messenger'a eklediğinizde "
+"Facebook mesajlarınız için kullandığınız aynı mesajlaşma araçlarını "
+"kullanın. Yüklemesi ücretsiz ve kolaydır ve müşterilerin zaten bildiği bir "
+"kullanıcı arayüzüne sahiptir."
+
+msgid "The Official Facebook Chat Plugin"
+msgstr "Resmi Facebook Sohbet Eklentisi"

@@ -3,7 +3,7 @@ Contributors: facebook
 Tags: Facebook, Messenger, Customer Care, Chat, Messaging, Chat Plugin
 Requires at least: 3.9
 Tested up to: 5.5.3
-Stable tag: 1.9
+Stable tag: 2.0
 Requires PHP: 5.2.4
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -89,6 +89,10 @@ If you get stuck, or have any questions, you can ask for help in the [Messenger 
 
 == Changelog ==
 
+= 2.0 - Dec 1, 2020 =
+* Tested up to WordPress 5.5.3
+* Added translations for strings on admin panel settings and css fix
+
 = 1.9 - Nov 3, 2020 =
 * Tested up to WordPress 5.5.3
 * Added troubleshooting links in plugin settings page and faq's
@@ -128,6 +132,9 @@ If you get stuck, or have any questions, you can ask for help in the [Messenger 
 * Plugin released for all users
 
 == Upgrade Notice ==
+
+= 2.0 =
+* Added translations for strings on admin panel settings and css fix. Tested up to WordPress 5.5.3
 
 = 1.9 =
 * Added troubleshooting links in plugin settings page and faq's. Tested up to WordPress 5.5.3

@@ -1,0 +1,110 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Official Facebook Chat Plugin\n"
+"POT-Creation-Date: 2020-11-13 16:39-0800\n"
+"PO-Revision-Date: 2020-12-02 16:20-0800\n"
+"Language-Team: Facebook\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__\n"
+"Last-Translator: \n"
+"Language: pt_PT\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: facebook-messenger-customer-chat.php:44
+#: facebook-messenger-customer-chat.php:61
+msgid "Settings"
+msgstr "Definições"
+
+#: facebook-messenger-customer-chat.php:68
+msgid "FAQ"
+msgstr "Perguntas frequentes"
+
+#: facebook-messenger-customer-chat.php:74
+msgid "Support"
+msgstr "Suporte"
+
+#: options.php:107
+msgid "Facebook Chat Plugin Settings"
+msgstr "Definições do plug-in de chat do Facebook"
+
+#: options.php:111
+msgid "Getting Started?"
+msgstr "Como começar"
+
+#: options.php:112
+msgid ""
+"Let people start a conversation on your website and continue in Messenger. "
+"It's easy to set up. Chats started on your website can be continued in the "
+"customers' Messenger app, so you never lose connections with your customers. "
+"Even those without a Facebook Messenger account can chat with you in guest "
+"mode, so you can reach more customers than ever."
+msgstr ""
+"Permite que as pessoas iniciem uma conversa no teu site e continuem a mesma "
+"no Messenger. A configuração é simples. As conversas iniciadas no teu site "
+"podem ser continuadas na app Messenger dos clientes, para que nunca percas "
+"ligações com eles. Mesmo aqueles que não têm uma conta do Facebook Messenger "
+"podem conversar contigo no modo de convidado, para que possas alcançar mais "
+"clientes do que nunca."
+
+#: options.php:128
+msgid "Setup Chat Plugin"
+msgstr "Configurar plug-in de chat"
+
+#: options.php:130
+msgid "Edit Chat Plugin"
+msgstr "Editar plug-in de chat"
+
+#: options.php:144
+msgid ""
+"The plugin code has already been added into your website. You can always go "
+"back through the setup process to customize the plugin."
+msgstr ""
+"O código de plug-in já foi adicionado ao teu site. Podes sempre percorrer o "
+"processo de configuração para personalizares o plug-in."
+
+#: options.php:153
+msgid "Use of this plugin is subject to Facebook's Platform Terms"
+msgstr ""
+"A utilização deste plug-in está sujeita aos Termos da Plataforma do Facebook"
+
+#: options.php:156
+msgid "Having a problem setting up or using the Chat Plugin?"
+msgstr "Estás a ter problemas em configurar ou utilizar o plug-in de chat?"
+
+#: options.php:158
+msgid "Please consult our Troubleshooting Guide."
+msgstr "Consulta o nosso guia de resolução de problemas."
+
+#: options.php:161
+msgid ""
+"If the troubleshooting steps in the guide do not solve your problem, please "
+"post in the plugin support forum."
+msgstr ""
+"Se os passos de resolução de problemas no guia não resolverem o teu problema,"
+"publica no fórum de suporte do plug-in."
+
+msgid ""
+"With a few clicks, you can add the Facebook Chat Plugin to your website, "
+"enabling customers to message you while browsing your website. To see and "
+"reply to those messages, simply use the same messaging tools you use for "
+"your Facebook messaging, on desktop at facebook.com, Facebook Page Manager "
+"App (available on iOS and Android), or by adding your page account to "
+"Messenger. It's free, easy to install and comes with a user interface your "
+"customers are already familiar with."
+msgstr ""
+"Com alguns cliques podes adicionar o plug-in de chat do Facebook ao teu "
+"site, o que permite que os clientes te enviem mensagens enquanto navegam no "
+"teu site. Para veres e responderes a essas mensagens, utiliza as mesmas "
+"ferramentas de mensagens que utilizas para as mensagens do Facebook no "
+"computador em facebook.com e na app Gestor de Páginas do Facebook "
+"(disponível para iOS e Android) ou adiciona a conta da tua Página ao "
+"Messenger. É gratuito, fácil de instalar e tem uma interface de utilizador "
+"que os teus clientes já conhecem."
+
+msgid "The Official Facebook Chat Plugin"
+msgstr "Plug-in de chat oficial do Facebook"

@@ -1,0 +1,107 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Official Facebook Chat Plugin\n"
+"POT-Creation-Date: 2020-11-13 16:39-0800\n"
+"PO-Revision-Date: 2020-12-02 15:25-0800\n"
+"Language-Team: Facebook\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__\n"
+"Last-Translator: \n"
+"Language: da_DK\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: facebook-messenger-customer-chat.php:44
+#: facebook-messenger-customer-chat.php:61
+msgid "Settings"
+msgstr "Indstillinger"
+
+#: facebook-messenger-customer-chat.php:68
+msgid "FAQ"
+msgstr "OFTE STILLEDE SPØRGSMÅL"
+
+#: facebook-messenger-customer-chat.php:74
+msgid "Support"
+msgstr "Support"
+
+#: options.php:107
+msgid "Facebook Chat Plugin Settings"
+msgstr "Indstillinger for Facebooks chat-plugin"
+
+#: options.php:111
+msgid "Getting Started?"
+msgstr "Ved at komme i gang?"
+
+#: options.php:112
+msgid ""
+"Let people start a conversation on your website and continue in Messenger. "
+"It's easy to set up. Chats started on your website can be continued in the "
+"customers' Messenger app, so you never lose connections with your customers. "
+"Even those without a Facebook Messenger account can chat with you in guest "
+"mode, so you can reach more customers than ever."
+msgstr ""
+"Lad folk starte en samtale på dit website og fortsætte i Messenger. Det er "
+"let at opsætte. Chats startet på dit websted kan fortsættes i kundernes "
+"Messenger-app, så du mister aldrig forbindelsen til dine kunder. Selv dem "
+"uden en Facebook Messenger-konto kan chatte med dig i gæstetilstand, så du "
+"kan nå ud til flere kunder end nogensinde før."
+
+#: options.php:128
+msgid "Setup Chat Plugin"
+msgstr "Opsæt chat-pluginet"
+
+#: options.php:130
+msgid "Edit Chat Plugin"
+msgstr "Rediger chat-pluginet"
+
+#: options.php:144
+msgid ""
+"The plugin code has already been added into your website. You can always go "
+"back through the setup process to customize the plugin."
+msgstr ""
+"Pluginkoden er allerede føjet til dit website. Du kan altid gå tilbage "
+"gennem installationsprocessen for at tilpasse pluginet."
+
+#: options.php:153
+msgid "Use of this plugin is subject to Facebook's Platform Terms"
+msgstr "Brug af dette plugin er underlagt Facebooks platformsvilkår"
+
+#: options.php:156
+msgid "Having a problem setting up or using the Chat Plugin?"
+msgstr "Har du et problem med at konfigurere eller bruge Chat-pluginet?"
+
+#: options.php:158
+msgid "Please consult our Troubleshooting Guide."
+msgstr "Se vores fejlfindingsvejledning."
+
+#: options.php:161
+msgid ""
+"If the troubleshooting steps in the guide do not solve your problem, please "
+"post in the plugin support forum."
+msgstr ""
+"Hvis fejlfindingstrinene i vejledningen ikke løser dit problem, bedes du slå "
+"det op i plugin-supportforummet."
+
+msgid ""
+"With a few clicks, you can add the Facebook Chat Plugin to your website, "
+"enabling customers to message you while browsing your website. To see and "
+"reply to those messages, simply use the same messaging tools you use for "
+"your Facebook messaging, on desktop at facebook.com, Facebook Page Manager "
+"App (available on iOS and Android), or by adding your page account to "
+"Messenger. It's free, easy to install and comes with a user interface your "
+"customers are already familiar with."
+msgstr ""
+"Med et par klik kan du tilføje Facebook Chat-pluginet til dit website, så "
+"kunderne kan sende en besked til dig, mens de kigger på dit website. For at "
+"se og svare på disse beskeder skal du blot bruge de samme beskedværktøjer, "
+"som du bruger til din Facebook-besked på computeren på facebook.com "
+"Facebooks sideadministrator-app (tilgængelig på iOS og Android) eller ved at "
+"tilføje din sidekonto til Messenger. Det er gratis, let at installere og "
+"leveres med en brugergrænseflade, som dine kunder allerede kender.\""
+
+msgid "The Official Facebook Chat Plugin"
+msgstr "Det officielle Facebook Chat-plugin"

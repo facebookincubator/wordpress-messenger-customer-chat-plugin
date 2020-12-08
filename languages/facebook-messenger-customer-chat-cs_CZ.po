@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Official Facebook Chat Plugin\n"
+"POT-Creation-Date: 2020-11-13 16:39-0800\n"
+"PO-Revision-Date: 2020-12-02 15:21-0800\n"
+"Language-Team: Facebook\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 ? 1 : 2);\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__\n"
+"Last-Translator: \n"
+"Language: cs_CZ\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: facebook-messenger-customer-chat.php:44
+#: facebook-messenger-customer-chat.php:61
+msgid "Settings"
+msgstr "Nastavení"
+
+#: facebook-messenger-customer-chat.php:68
+msgid "FAQ"
+msgstr "Časté dotazy"
+
+#: facebook-messenger-customer-chat.php:74
+msgid "Support"
+msgstr "Podpora"
+
+#: options.php:107
+msgid "Facebook Chat Plugin Settings"
+msgstr "Nastavení Facebook pluginu pro chat"
+
+#: options.php:111
+msgid "Getting Started?"
+msgstr "Jak začít?"
+
+#: options.php:112
+msgid ""
+"Let people start a conversation on your website and continue in Messenger. "
+"It's easy to set up. Chats started on your website can be continued in the "
+"customers' Messenger app, so you never lose connections with your customers. "
+"Even those without a Facebook Messenger account can chat with you in guest "
+"mode, so you can reach more customers than ever."
+msgstr ""
+"Umožněte lidem zahájit konverzaci na vašem webu a pak v ní pokračovat v "
+"Messengeru. Nastavení je snadné. V chatech zahájených na vašem webu můžou "
+"zákazníci pokračovat v Messengeru, takže spojení s nimi nikdy neztratíte. "
+"Dokonce i ti, kteří Facebook Messenger účet nemají, s vámi můžou chatovat v "
+"režimu hosta, a vy tak můžete oslovit více zákazníků než kdy předtím."
+
+#: options.php:128
+msgid "Setup Chat Plugin"
+msgstr "Nastavit plugin pro chat"
+
+#: options.php:130
+msgid "Edit Chat Plugin"
+msgstr "Upravit plugin pro chat"
+
+#: options.php:144
+msgid ""
+"The plugin code has already been added into your website. You can always go "
+"back through the setup process to customize the plugin."
+msgstr ""
+"Kód pluginu už byl na váš web přidán. V krocích nastavení se vždy můžete "
+"vrátit zpět a plugin si přizpůsobit."
+
+#: options.php:153
+msgid "Use of this plugin is subject to Facebook's Platform Terms"
+msgstr ""
+"Používání tohoto pluginu podléhá smluvním podmínkám platformy Facebooku"
+
+#: options.php:156
+msgid "Having a problem setting up or using the Chat Plugin?"
+msgstr "Máte potíže s nastavením nebo používáním pluginu pro chat?"
+
+#: options.php:158
+msgid "Please consult our Troubleshooting Guide."
+msgstr "Přečtěte si našeho průvodce řešením potíží."
+
+#: options.php:161
+msgid ""
+"If the troubleshooting steps in the guide do not solve your problem, please "
+"post in the plugin support forum."
+msgstr ""
+"Pokud postup řešení potíží v průvodci váš problém nevyřeší, napište "
+"příspěvek ve fóru podpory pluginů. "
+
+msgid ""
+"With a few clicks, you can add the Facebook Chat Plugin to your website, "
+"enabling customers to message you while browsing your website. To see and "
+"reply to those messages, simply use the same messaging tools you use for "
+"your Facebook messaging, on desktop at facebook.com, Facebook Page Manager "
+"App (available on iOS and Android), or by adding your page account to "
+"Messenger. It's free, easy to install and comes with a user interface your "
+"customers are already familiar with."
+msgstr ""
+"Pomocí několika kliknutí můžete na svůj web přidat Facebook plugin pro chat, "
+"který zákazníkům umožní vám během procházení webu poslat zprávu. Chcete-li "
+"tyto zprávy zobrazit a odpovídat na ně, jednoduše použijte stejné nástroje "
+"pro posílání zpráv, které používáte k posílání zpráv z Facebooku na počítači "
+"na facebook.com, Aplikace Facebook Správce stránek (k dispozici pro iOS "
+"a Android) nebo přidáním účtu stránky do Messengeru. Instalace je jednoduchá "
+"a bezplatná a zahrnuje uživatelské rozhraní, které už zákazníci znají."
+
+msgid "The Official Facebook Chat Plugin"
+msgstr "Oficiální Facebook plugin pro chat"

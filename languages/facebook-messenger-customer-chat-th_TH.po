@@ -1,0 +1,105 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Official Facebook Chat Plugin\n"
+"POT-Creation-Date: 2020-11-13 16:39-0800\n"
+"PO-Revision-Date: 2020-12-02 21:29-0800\n"
+"Language-Team: Facebook\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__\n"
+"Last-Translator: \n"
+"Language: th_TH\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: facebook-messenger-customer-chat.php:44
+#: facebook-messenger-customer-chat.php:61
+msgid "Settings"
+msgstr "การตั้งค่า"
+
+#: facebook-messenger-customer-chat.php:68
+msgid "FAQ"
+msgstr "คำถามที่พบบ่อย"
+
+#: facebook-messenger-customer-chat.php:74
+msgid "Support"
+msgstr "การสนับสนุน"
+
+#: options.php:107
+msgid "Facebook Chat Plugin Settings"
+msgstr "การตั้งค่าปลั๊กอินแชทของ Facebook"
+
+#: options.php:111
+msgid "Getting Started?"
+msgstr "การเริ่มต้นใช้งาน"
+
+#: options.php:112
+msgid ""
+"Let people start a conversation on your website and continue in Messenger. "
+"It's easy to set up. Chats started on your website can be continued in the "
+"customers' Messenger app, so you never lose connections with your customers. "
+"Even those without a Facebook Messenger account can chat with you in guest "
+"mode, so you can reach more customers than ever."
+msgstr ""
+"ผู้คนสามารถเริ่มสนทนาบนเว็บไซต์ของคุณและดำเนินการต่อได้ใน Messenger ซึ่งตั้งค่าได้ง่าย "
+"แชทที่เริ่มจากบนเว็บไซต์ของคุณสามารถดำเนินการต่อได้ในแอพ Messenger ของลูกค้า "
+"ดังนั้นคุณจะไม่สูญเสียการติดต่อกับลูกค้าแม้ว่าลูกค้าจะไม่มีบัญชี Facebook Messenger ก็ตาม "
+"ลูกค้าจะสามารถแชทกับคุณได้ในโหมดผู้ได้รับเชิญ คุณจะสามารถเข้าถึงลูกค้าได้มากกว่าที่เคย"
+
+#: options.php:128
+msgid "Setup Chat Plugin"
+msgstr "ตั้งค่าปลั๊กอินแชท"
+
+#: options.php:130
+msgid "Edit Chat Plugin"
+msgstr "แก้ไขปลั๊กอินแชท"
+
+#: options.php:144
+msgid ""
+"The plugin code has already been added into your website. You can always go "
+"back through the setup process to customize the plugin."
+msgstr ""
+"ได้มีการเพิ่มรหัสปลั๊กอินลงในเว็บไซต์ของคุณแล้ว "
+"คุณสามารถย้อนกลับไปผ่านขั้นตอนการตั้งค่าเพื่อปรับแต่งปลั๊กอินได้ทุกเมื่อ"
+
+#: options.php:153
+msgid "Use of this plugin is subject to Facebook's Platform Terms"
+msgstr "การใช้ปลั๊กอินนี้เป็นไปตามข้อกำหนดแพลตฟอร์มของ Facebook"
+
+#: options.php:156
+msgid "Having a problem setting up or using the Chat Plugin?"
+msgstr "หากมีปัญหาเกี่ยวกับการตั้งค่าหรือการใช้ปลั๊กอินแชท"
+
+#: options.php:158
+msgid "Please consult our Troubleshooting Guide."
+msgstr "โปรดดูคู่มือการแก้ไขปัญหาของเรา"
+
+#: options.php:161
+msgid ""
+"If the troubleshooting steps in the guide do not solve your problem, please "
+"post in the plugin support forum."
+msgstr ""
+"หากขั้นตอนการแก้ไขปัญหาในคู่มือนี้ไม่ได้แก้ไขปัญหาของคุณ โปรด โพสต์ในฟอรั่มการสนับสนุนปลั๊กอิน"
+
+msgid ""
+"With a few clicks, you can add the Facebook Chat Plugin to your website, "
+"enabling customers to message you while browsing your website. To see and "
+"reply to those messages, simply use the same messaging tools you use for "
+"your Facebook messaging, on desktop at facebook.com, Facebook Page Manager "
+"App (available on iOS and Android), or by adding your page account to "
+"Messenger. It's free, easy to install and comes with a user interface your "
+"customers are already familiar with."
+msgstr ""
+"ด้วยการคลิกเพียงไม่กี่ครั้ง คุณจะสามารถเพิ่มปลั๊กอินแชทของ Facebook ลงในเว็บไซต์ได้ "
+"ซึ่งจะช่วยให้ลูกค้าสามารถส่งข้อความถึงคุณได้ในขณะที่ดูเว็บไซต์ของคุณ "
+"หากต้องการดูและตอบกลับข้อความเหล่านั้น "
+"เพียงแค่ใช้เครื่องมือส่งข้อความเดียวกันกับที่คุณใช้ส่งข้อความผ่าน Facebook บนเดสก์ท็อปที่ facebook."
+"com แอพตัวจัดการเพจ Facebook (พร้อมให้ใช้งานได้บน iOS และ Android) "
+"หรือโดยเพิ่มบัญชีเพจของคุณลงใน Messenger ไม่มีค่าใช้จ่าย "
+"ติดตั้งได้ง่ายและมาพร้อมกับอินเทอร์เฟซผู้ใช้ที่ลูกค้าของคุณคุ้นเคยดีอยู่แล้ว"
+
+msgid "The Official Facebook Chat Plugin"
+msgstr "ปลั๊กอินแชทของ Facebook อย่างเป็นทางการ"

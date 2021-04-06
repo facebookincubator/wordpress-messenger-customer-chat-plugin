@@ -13,6 +13,9 @@
 */
 
 // Settings page
+
+add_action( 'admin_enqueue_scripts', 'fbmcc_add_styles' );
+add_action( 'admin_enqueue_scripts', 'fmcc_localize_ajax' );
 add_action( 'admin_menu', function() {
   wp_register_script(
     'launch_script',
@@ -44,9 +47,6 @@ add_action( 'admin_menu', function() {
     . 'NzU1LjUsMzY4LjU2N0w1NDAuODkxLDU5Ni4zMDh6Ii8+PC9zdmc+'
   );
 });
-
-add_action( 'admin_enqueue_scripts', 'fbmcc_add_styles' );
-add_action( 'admin_enqueue_scripts', 'fmcc_localize_ajax' );
 
 add_action( 'wp_ajax_fbmcc_update_options', 'fbmcc_update_options');
 
@@ -87,18 +87,16 @@ function fbmcc_add_styles() {
 }
 
 function fmcc_localize_ajax() {
+  wp_register_script( 'code_script',
+    plugin_dir_url( __FILE__ ) . 'script.js' );
 
   if ( current_user_can( 'manage_options' ) ) {
     $ajax_object = array(
       'nonce' => wp_create_nonce( 'update_fmcc_code' )
     );
-
-    wp_register_script( 'code_script',
-                        plugin_dir_url( __FILE__ ) . 'script.js' );
     wp_localize_script( 'code_script', 'ajax_object', $ajax_object );
-    wp_enqueue_script( 'code_script' );
   }
-
+  wp_enqueue_script( 'code_script' );
 }
 
 function fbmcc_integration_settings() {

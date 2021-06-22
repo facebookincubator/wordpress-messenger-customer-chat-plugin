@@ -77,8 +77,62 @@ class Facebook_Messenger_Customer_Chat {
     return $links;
   }
 
+  function fbmcc_should_display() {
+    $fbmcc_page_types = get_option( 'fbmcc_page_types' );
+    global $wp_query;
+
+    if( !$fbmcc_page_types || $fbmcc_page_types['all'] == "1") {
+      return true;
+    }
+
+    if (
+      $fbmcc_page_types['front_page'] == "1" &&
+      (is_home() || is_front_page())
+    ) {
+      return true;
+    }
+
+    if($fbmcc_page_types['posts'] == "1" && is_single()) {
+      return true;
+    }
+
+    if($fbmcc_page_types['product_pages'] == "1") {
+      if ( function_exists ( 'is_product' ) && is_product() )  {
+        return true;
+      }
+    }
+
+    $active_pages = $fbmcc_page_types["pages"];
+    $current_page = $wp_query->get_queried_object()->ID;
+    $pages_all = $fbmcc_page_types['pages_all'];
+    if(is_page()) {
+      if( $pages_all == "1" ) {
+        return true;
+      } else {
+        if( $active_pages && in_array( $current_page, $active_pages) ) {
+          return true;
+        }
+      }
+    }
+
+    if( ($fbmcc_page_types['category_view'] == "1") && is_category() ) {
+      return true;
+    }
+
+    if( $fbmcc_page_types['tag_view'] == "1" && is_tag() ) {
+      return true;
+    }
+
+    return false;
+  }
+
   function fbmcc_inject_messenger() {
-    if( get_option( 'fbmcc_pageID' ) != '' ) {
+    if( !get_option( 'fbmcc_pageID' ) ||
+        get_option( 'fbmcc_pageID' ) == '' ) {
+      return;
+    }
+
+    if( $this->fbmcc_should_display() ) {
       $genCode = "";
       $genCode .= "
         <div id='fb-root'></div>

@@ -124,11 +124,11 @@ class Facebook_Messenger_Customer_Chat {
       }
     }
 
-    if( ($fbmcc_page_types['category_view'] == "1") && is_category() ) {
+    if( ($fbmcc_page_types['category_index'] == "1") && is_category() ) {
       return true;
     }
 
-    if( $fbmcc_page_types['tag_view'] == "1" && is_tag() ) {
+    if( $fbmcc_page_types['tag_index'] == "1" && is_tag() ) {
       return true;
     }
 
@@ -166,7 +166,7 @@ class Facebook_Messenger_Customer_Chat {
     load_plugin_textdomain( 'facebook-messenger-customer-chat', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
   }
 
-    function render_feedback_form() {
+  function render_feedback_form() {
     ?>
     <div id="fbmcc-deactivationModalOverlay">
       <div id="fbmcc-deactivationModalContainer">

@@ -16,9 +16,9 @@ function fbmcc_setupCustomerChat() {
   var baseURL = "https://www.facebook.com/customer_chat/dialog/?domain=";
   var urlParam = encodeURI(
     window.location.protocol
-      + '//'
-      + window.location.hostname
-      + (window.location.port ? ':' + window.location.port : '')
+    + '//'
+    + window.location.hostname
+    + (window.location.port ? ':' + window.location.port : '')
   );
   var customerWindow = window.open(
     baseURL + urlParam,
@@ -69,12 +69,117 @@ function fbmcc_sanitizeLocale( locale ) {
 	{
 		init: function()
 	  {
+      this.advancedConfigDeploymentSelectorHandler();
+      this.advancedConfigMenuHandler();
+      this.advancedConfigWriteHandler();
       this.deactivationFormSubmit();
 			this.deactivationModalOpenHandler();
       this.deactivationModalCloseHandler();
       this.deactivationModalFreetextOptionOpenHandler();
+
     },
 
+		advancedConfigDeploymentSelectorHandler: function() {
+			$('#fbmcc-deploymentSelector').change( function () {
+        if ($(this).val() == 1) {
+          $('div.fbmcc-deploymentMenu').addClass("hidden");
+        } else {
+          $('div.fbmcc-deploymentMenu').removeClass("hidden");
+        }
+			})
+    },
+		advancedConfigMenuHandler: function() {
+			$('li .fbmcc-menuParentLink').click(
+				function () {
+          if ($(this).parent().find('ul.fbmcc-submenu').css("display") === "none") {
+            $(this).parent().find('img.fbmcc-chevron').attr("src", $(this).parent().find('img.fbmcc-chevron').attr("src").replace("chevron-right", "chevron-down"));
+            $(this).parent().find('ul.fbmcc-submenu').slideDown('slow', 'swing');
+          } else {
+            $(this).parent().find('img.fbmcc-chevron').attr("src", $(this).parent().find('img.fbmcc-chevron').attr("src").replace("chevron-down", "chevron-right"));
+            $(this).parent().find('ul.fbmcc-submenu').slideUp('slow', 'swing');
+          }
+				}
+			)
+    },
+		advancedConfigWriteHandler: function() {
+			$('div#fbmcc-page-params ul li .fbmcc-displaySetting').on('change',
+				function () {
+          var pages = [];
+          if ($(this).hasClass("fbmcc-menuParentItem")) {
+            that = $(this);
+            $(this).parent().find('ul.fbmcc-submenu').find('input:checkbox').each(function() {
+              if (that.is(":checked")) {
+                $(this).prop("checked", true);
+              } else {
+                $(this).prop("checked", false);
+              }
+            });
+          } else if ($(this).hasClass("fbmcc-submenuOption")) {
+            var has_selected_item = false;
+            var has_unselected_item = false;
+
+            $(this).parent().parent().find('input:checkbox.fbmcc-submenuOption').each(function() {
+              if ($(this).is(":checked")) {
+                has_selected_item = true;
+                if ($(this).hasClass("fbmcc-activePageOption")) {
+                  pages.push($(this).attr('id').replace('pageid_', ''));
+                }
+              } else {
+                has_unselected_item = true;
+              }
+            });
+            if (has_selected_item && has_unselected_item) {
+              $(this).parent().parent().parent().find('input:checkbox.fbmcc-menuParentItem').prop({
+                checked: false,
+                indeterminate: true
+              });
+            }
+          }
+
+          var data = {
+            'action' : 'fbmcc_update_options',
+            'pageTypes' : {
+              all: $('#fbmcc-deploymentSelector').val() == 1 ? 1 : 0,
+              category_index : $("#cbShowCategoryIndex").is(":checked") ? 1 : 0,
+              front_page : $("#cbShowFrontPage").is(":checked") ? 1 : 0,
+              pages : $("#cbShowPages").is(":checked") ? [] : pages,
+              pages_all : $("#cbShowPages").is(":checked") ? 1 : 0,
+              posts : $("#cbShowSinglePostView").is(":checked") ? 1 : 0,
+              product_pages : $("#cbShowProductPages").is(":checked") ? 1 : 0,
+              tag_index : $("#cbShowTagsIndex").is(":checked") ? 1 : 0,
+            },
+            '_wpnonce' : ajax_object.nonce,
+          };
+          if (!$('div.fbmcc-deploymentMenu').hasClass("hidden")) {
+            $('#fbmcc-saveStatus-error').addClass('hidden');
+            $('#fbmcc-saveStatus-saved').addClass('hidden');
+            $('#fbmcc-saveStatus-saving').removeClass('hidden');
+            $('#fbmcc-saveStatus-saving').delay(2000).fadeOut();
+          }
+          jQuery.ajax({
+            type: 'POST',
+            url: ajaxurl,
+            data: data,
+            error: function(results) {
+              if (!$('div.fbmcc-deploymentMenu').hasClass("hidden")) {
+                $('#fbmcc-saveStatus-error').removeClass('hidden');
+                $('#fbmcc-saveStatus-saved').addClass('hidden');
+                $('#fbmcc-saveStatus-saving').addClass('hidden');
+                $('#fbmcc-saveStatus-error').delay(2000).fadeOut();
+              }
+            },
+            success: function(results) {
+              if (!$('div.fbmcc-deploymentMenu').hasClass("hidden")) {
+                $('#fbmcc-saveStatus-error').addClass('hidden');
+                $('#fbmcc-saveStatus-saved').removeClass('hidden');
+                $('#fbmcc-saveStatus-saving').addClass('hidden');
+                $('#fbmcc-saveStatus-saved').delay(2000).fadeOut();
+              }
+            }
+          });
+				}
+			)
+    },
     deactivationFormSubmit: function() {
 			$( '#fbmcc-deactivationFormSubmit' ).click(
         function () {
@@ -146,4 +251,26 @@ function fbmcc_sanitizeLocale( locale ) {
     },
 	};
 
+	$( document ).ready(
+		function() {
+      ChatPlugin.init();
+      $('ul.fbmcc-submenu').each(function() {
+        var has_selected_item = false;
+        var has_unselected_item = false;
+
+        $(this).find('input:checkbox').each(function() {
+          if ($(this).is(":checked")) {
+            has_selected_item = true;
+          } else {
+            has_unselected_item = true;
+          }
+        });
+        if (has_selected_item && has_unselected_item) {
+          $(this).parent().find('input:checkbox.fbmcc-menuParentItem').prop({
+            checked: false,
+            indeterminate: true
+          });
+        }
+      })
+    });
 })( jQuery );

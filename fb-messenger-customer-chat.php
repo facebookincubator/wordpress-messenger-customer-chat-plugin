@@ -25,12 +25,21 @@ Domain Path: /languages/
 class Facebook_Messenger_Customer_Chat {
   function __construct() {
     include( plugin_dir_path( __FILE__ ) . 'options.php' );
+    add_action( 'current_screen', array( $this, 'show_deactivation_feedback_form' ) );
     add_action( 'wp_footer', array( $this, 'fbmcc_inject_messenger' ) );
     add_filter( 'plugin_action_links',
                 array( $this, 'fbmcc_plugin_action_links'), 10, 2 );
     add_filter( 'plugin_row_meta',
                 array( $this, 'fbmcc_register_plugin_links'), 10, 2 );
     add_action( 'plugins_loaded', array($this, 'fbmcc_i18n') );
+  }
+
+  public function show_deactivation_feedback_form() {
+    if ( get_current_screen()->id !== 'plugins' ) {
+      return;
+    }
+
+    add_action( 'in_admin_header', array($this, 'render_feedback_form'));
   }
 
   function fbmcc_plugin_action_links( $links, $file ) {
@@ -155,6 +164,59 @@ class Facebook_Messenger_Customer_Chat {
 
   function fbmcc_i18n() {
     load_plugin_textdomain( 'facebook-messenger-customer-chat', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+  }
+
+    function render_feedback_form() {
+    ?>
+    <div id="fbmcc-deactivationModalOverlay">
+      <div id="fbmcc-deactivationModalContainer">
+        <button title="<?php esc_html_e( 'Cancel', 'facebook-messenger-customer-chat' ); ?>" class="fbmcc-deactivationModal-closeButton">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24px"
+            height="24px"
+            viewBox="0 0 24 24"
+            fill="#424D57"
+            class="material material-close-icon undefined"
+          >
+            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+          </svg>
+        </button>
+        <div id="fbmcc-deactivationModal">
+          <div id="fbmcc-deactivationFormContainer">
+            <h3><?=esc_html__( 'We value your feedback.', 'facebook-messenger-customer-chat' )?></h3>
+            <p><?=esc_html__( 'Please let us know why you’re deactivating Facebook Chat Plugin.', 'facebook-messenger-customer-chat' )?></p>
+              <form id="fbmcc-deactivationForm">
+              <ul>
+                <li><input type="radio" name="fbmcc-deactivationReason" value="1" /> <?=esc_html__( 'I’m unable to get the plugin to work', 'facebook-messenger-customer-chat' )?></li>
+                <li><input type="radio" name="fbmcc-deactivationReason" value="2" /> <?=esc_html__( 'I no longer need a live chat feature', 'facebook-messenger-customer-chat' )?></li>
+                <li><input type="radio" name="fbmcc-deactivationReason" value="3" /> <?=esc_html__( 'I’m using a different live chat plugin', 'facebook-messenger-customer-chat' )?>
+                  <div
+                    class="fbmcc-deactivationReason-commentContainer"
+                    id="fbmcc-deactivationReason-commentContainer3"
+                  >
+                  <?=esc_html__( 'Name of plugin:', 'facebook-messenger-customer-chat' )?> <input type="text" id="fbmcc-deactivationReason-preferredPluginName" /></div></li>
+                <li><input type="radio" name="fbmcc-deactivationReason" value="4" /> <?=esc_html__( 'This is a temporary deactivation. I’ll be back!', 'facebook-messenger-customer-chat' )?></li>
+                <li><input type="radio" name="fbmcc-deactivationReason" value="5" /> <?=esc_html__( 'Other', 'facebook-messenger-customer-chat' )?>
+                  <div
+                    class="fbmcc-deactivationReason-commentContainer"
+                    id="fbmcc-deactivationReason-commentContainer5"
+                  >
+                  <?=esc_html__( 'Comments:', 'facebook-messenger-customer-chat' )?> <input type="text" id="fbmcc-deactivationReason-other" /></div></li>
+                <li>
+                  <input type="hidden" id="fbmcc-deactivationForm-pageId" value="<?php echo fbmcc_sanitize_page_id(get_option( 'fbmcc_pageID' )); ?>" />
+                  <input id="fbmcc-deactivationFormSubmit" type="button" value="<?=esc_html__( 'Submit', 'facebook-messenger-customer-chat' )?>" />
+                </li>
+              </ul>
+            </form>
+          </div>
+          <div id="fbmcc-deactivationModal-thankYou" class="hidden">
+            <h3><?=esc_html__( 'Thank you. We appreciate your feedback.', 'facebook-messenger-customer-chat' )?></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <?php
   }
 }
 

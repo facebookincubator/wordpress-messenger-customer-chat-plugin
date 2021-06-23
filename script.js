@@ -62,3 +62,88 @@ function fbmcc_sanitizeLocale( locale ) {
     return '';
   }
 }
+
+(function($)
+{
+	var ChatPlugin =
+	{
+		init: function()
+	  {
+      this.deactivationFormSubmit();
+			this.deactivationModalOpenHandler();
+      this.deactivationModalCloseHandler();
+      this.deactivationModalFreetextOptionOpenHandler();
+    },
+
+    deactivationFormSubmit: function() {
+			$( '#fbmcc-deactivationFormSubmit' ).click(
+        function () {
+          $('#fbmcc-deactivationFormSubmit').attr('disabled','disabled');
+          var reason = "";
+          if ($('input[name=fbmcc-deactivationReason]:checked', '#fbmcc-deactivationForm').val() == 3) {
+            reason = $('#fbmcc-deactivationReason-preferredPluginName').val();
+          } else if ($('input[name=fbmcc-deactivationReason]:checked', '#fbmcc-deactivationForm').val() == 5) {
+            reason = $('#fbmcc-deactivationReason-other').val();
+          }
+          $.ajax(
+            {
+              method: 'POST',
+              url: 'https://www.facebook.com/plugins/chat/wordpress_deactivation/',
+              data: $.param(
+                {
+                  page_id: $('#fbmcc-deactivationForm-pageId').val(),
+                  reason: reason,
+                  selected_option: $('input[name=fbmcc-deactivationReason]:checked', '#fbmcc-deactivationForm').val()
+                }
+              ),
+              complete: function () {
+                $('#fbmcc-deactivationFormContainer').addClass('hidden');
+                $('#fbmcc-deactivationModal-thankYou').removeClass('hidden');
+              },
+              error: function () {
+                $('#fbmcc-deactivationFormContainer').addClass('hidden');
+                $('#fbmcc-deactivationModal-thankYou').removeClass('hidden');
+              }
+            }
+          );
+				}
+			)
+    },
+		deactivationModalOpenHandler: function() {
+			$('table.plugins tr[data-slug=facebook-messenger-customer-chat] span.deactivate a').click(
+				function (e) {
+          e.preventDefault();
+					$( '#fbmcc-deactivationModalOverlay' ).toggleClass( 'fbmcc-deactivationModalOverlay-display' );
+				}
+			)
+    },
+    deactivationModalCloseHandler: function() {
+			$('#fbmcc-deactivationModalOverlay').click(
+				function (e) {
+					if (
+            $('#fbmcc-deactivationModalOverlay').hasClass( 'fbmcc-deactivationModalOverlay-display' ) &&
+					(
+					! $( e.target ).closest( '#fbmcc-deactivationModalContainer' ).length ||
+					$( e.target ).closest( '.fbmcc-deactivationModal-closeButton' ).length
+					)
+					) {
+						$( '#fbmcc-deactivationModalOverlay' ).toggleClass( 'fbmcc-deactivationModalOverlay-display' );
+            return window.location.replace(
+              $( 'table.plugins tr[data-slug=facebook-messenger-customer-chat] span.deactivate a' ).attr( 'href' )
+            );
+					}
+				}
+			);
+    },
+		deactivationModalFreetextOptionOpenHandler: function() {
+			$("#fbmcc-deactivationModal ul li input[name='fbmcc-deactivationReason']").click(
+				function () {
+          $('div.fbmcc-deactivationReason-commentContainer').removeClass( 'fbmcc-display' );
+          $( '#fbmcc-deactivationReason-commentContainer'
+            + $('input[name=fbmcc-deactivationReason]:checked', '#fbmcc-deactivationForm').val() ).toggleClass( 'fbmcc-display' );
+				}
+			)
+    },
+	};
+
+})( jQuery );

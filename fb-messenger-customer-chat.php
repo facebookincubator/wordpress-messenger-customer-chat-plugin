@@ -4,9 +4,9 @@ Plugin Name: The Official Facebook Chat Plugin
 Description: With a few clicks, you can add the Facebook Chat Plugin to your website, enabling customers to message you while browsing your website. To see and reply to those messages, simply use the same messaging tools you use for your Facebook messaging, on desktop at facebook.com, Facebook Page Manager App (available on iOS and Android), or by adding your page account to Messenger. It's free, easy to install and comes with a user interface your customers are already familiar with.
 Author: Facebook
 Author URI: https://developers.facebook.com
-Version: 2.0
+Version: 2.1
 Text Domain: facebook-messenger-customer-chat
-Domain Path: /languages/
+Domain Path: /languages
 */
 
 /*

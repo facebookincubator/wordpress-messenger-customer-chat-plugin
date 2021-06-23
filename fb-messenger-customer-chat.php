@@ -30,11 +30,11 @@ class Facebook_Messenger_Customer_Chat {
                 array( $this, 'fbmcc_plugin_action_links'), 10, 2 );
     add_filter( 'plugin_row_meta',
                 array( $this, 'fbmcc_register_plugin_links'), 10, 2 );
-    add_action( 'plugins_loaded', 'load_plugin_textdomain' );
+    add_action( 'plugins_loaded', array($this, 'fbmcc_i18n') );
   }
 
   function fbmcc_plugin_action_links( $links, $file ) {
-    $settings_url = 'admin.php?page=messenger-customer-chat-plugin';
+    $settings_url = 'admin.php?page=facebook-messenger-customer-chat';
     if ( current_user_can( 'manage_options' ) ) {
       $base = plugin_basename(__FILE__);
       if ( $file == $base ) {
@@ -51,7 +51,7 @@ class Facebook_Messenger_Customer_Chat {
   }
 
   function fbmcc_register_plugin_links( $links, $file ) {
-    $settings_url = 'admin.php?page=messenger-customer-chat-plugin';
+    $settings_url = 'admin.php?page=facebook-messenger-customer-chat';
     $base = plugin_basename(__FILE__);
     if ( $file == $base ) {
       if ( current_user_can( 'manage_options' ) ) {
@@ -153,7 +153,7 @@ class Facebook_Messenger_Customer_Chat {
     }
   }
 
-  function load_plugin_textdomain() {
+  function fbmcc_i18n() {
     load_plugin_textdomain( 'facebook-messenger-customer-chat', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
   }
 }

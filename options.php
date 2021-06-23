@@ -28,7 +28,7 @@ add_action( 'admin_menu', function() {
     'Plugin settings',
     'Customer Chat',
     'manage_options',
-    'messenger-customer-chat-plugin',
+    'facebook-messenger-customer-chat',
     'fbmcc_integration_settings',
     'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgi'
     . 'Pz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRw'
@@ -49,6 +49,7 @@ add_action( 'admin_menu', function() {
 });
 
 add_action( 'wp_ajax_fbmcc_update_options', 'fbmcc_update_options');
+add_action( 'plugins_loaded', array( $this, 'fbmcc_i18n' ) );
 
 function fbmcc_update_options() {
 
@@ -97,6 +98,10 @@ function fmcc_localize_ajax() {
     wp_localize_script( 'code_script', 'ajax_object', $ajax_object );
   }
   wp_enqueue_script( 'code_script' );
+}
+
+function fbmcc_i18n() {
+  load_plugin_textdomain( 'facebook-messenger-customer-chat', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 }
 
 function fbmcc_integration_settings() {

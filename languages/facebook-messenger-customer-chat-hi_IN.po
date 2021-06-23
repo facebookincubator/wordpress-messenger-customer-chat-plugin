@@ -2,8 +2,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: The Official Facebook Chat Plugin\n"
 "POT-Creation-Date: 2020-11-13 16:39-0800\n"
-"PO-Revision-Date: 2020-12-03 11:30-0800\n"
+"PO-Revision-Date: 2021-05-11 23:58+0800\n"
+"Last-Translator: \n"
 "Language-Team: Facebook\n"
+"Language: hi_IN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11,42 +13,113 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
 "X-Poedit-KeywordsList: __;_e;esc_html__\n"
-"Last-Translator: \n"
-"Language: hi_IN\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: facebook-messenger-customer-chat.php:44
-#: facebook-messenger-customer-chat.php:61
+#: facebook-messenger-customer-chat.php:3
+msgid "The Official Facebook Chat Plugin"
+msgstr "आधिकारिक फेसबुक चैट प्लगइन"
+
+#: facebook-messenger-customer-chat.php:4
+msgid ""
+"With a few clicks, you can add the Facebook Chat Plugin to your website, enabling customers to "
+"message you while browsing your website. To see and reply to those messages, simply use the "
+"same messaging tools you use for your Facebook messaging, on desktop at facebook.com, Facebook "
+"Page Manager App (available on iOS and Android), or by adding your page account to Messenger. "
+"It's free, easy to install and comes with a user interface your customers are already familiar "
+"with."
+msgstr ""
+"कुछ क्लिकों के साथ, आप अपनी वेबसाइट पर फेसबुक चैट प्लगइन जोड़ सकते हैं, जिससे ग्राहक आपकी वेबसाइट ब्राउज़ करते "
+"समय आपको संदेश दे सकेंगे। उन संदेशों को देखने और उनका जवाब देने के लिए, बस उन्हीं मैसेजिंग टूल्स का उपयोग करें, जिन्हें "
+"आप अपने फेसबुक मैसेजिंग के लिए उपयोग करते हैं, फेसबुक पर डेस्कटॉप पर, फेसबुक पेज मैनेजर ऐप (आईओएस और एंड्रॉइड पर "
+"उपलब्ध), या मैसेंजर पर अपने पेज अकाउंट को जोड़कर। यह मुफ़्त है, स्थापित करना आसान है और एक उपयोगकर्ता इंटरफ़ेस के "
+"साथ आता है जो आपके ग्राहक पहले से परिचित हैं।"
+
+#: facebook-messenger-customer-chat.php:53 facebook-messenger-customer-chat.php:70
 msgid "Settings"
 msgstr "सेटिंग्स"
 
-#: facebook-messenger-customer-chat.php:68
+#: facebook-messenger-customer-chat.php:77
 msgid "FAQ"
 msgstr "सामान्य प्रश्न"
 
-#: facebook-messenger-customer-chat.php:74
+#: facebook-messenger-customer-chat.php:83
 msgid "Support"
 msgstr "सहयता मंच"
 
-#: options.php:107
+#: facebook-messenger-customer-chat.php:173
+msgid "Cancel"
+msgstr ""
+
+#: facebook-messenger-customer-chat.php:183
+msgid "We value your feedback."
+msgstr "आपका फ़ीडबैक हमारे लिए महत्वपूर्ण है."
+
+#: facebook-messenger-customer-chat.php:188
+msgid "Please let us know why you’re deactivating Facebook Chat Plugin."
+msgstr "कृपया हमें बताएँ कि आप Facebook चैट प्लग-इन डीएक्टिवेट क्यों कर रहे हैं."
+
+#: facebook-messenger-customer-chat.php:191
+msgid "I’m unable to get the plugin to work"
+msgstr "मेरे डिवाइस पर प्लग-इन काम नहीं कर रहा है"
+
+#: facebook-messenger-customer-chat.php:192
+msgid "I no longer need a live chat feature"
+msgstr ""
+
+#: facebook-messenger-customer-chat.php:193
+msgid "I’m using a different live chat plugin"
+msgstr "मैं किसी दूसरे लाइव चैट प्लग-इन का उपयोग कर रहा/रही हूँ"
+
+#: facebook-messenger-customer-chat.php:198
+msgid "Name of plugin:"
+msgstr "प्लग-इन का नाम:"
+
+#: facebook-messenger-customer-chat.php:199
+msgid "This is a temporary deactivation. I’ll be back!"
+msgstr "यह डीएक्टिवेशन कुछ समय के लिए है. मैं इसका फिर से उपयोग करूँगा/करूँगी!"
+
+#: facebook-messenger-customer-chat.php:200
+msgid "Other"
+msgstr "अन्य"
+
+#: facebook-messenger-customer-chat.php:205
+msgid "Comments:"
+msgstr "कमेंट:"
+
+#: facebook-messenger-customer-chat.php:208
+msgid "Submit"
+msgstr "सबमिट करें"
+
+#: facebook-messenger-customer-chat.php:214
+msgid "Thank you. We appreciate your feedback."
+msgstr "धन्यवाद. हम आपके फ़ीडबैक की प्रशंसा करते हैं."
+
+#: options.php:22
+msgid "Plugin Settings"
+msgstr ""
+
+#: options.php:23
+msgid "Facebook Chat"
+msgstr ""
+
+#: options.php:106
 msgid "Facebook Chat Plugin Settings"
 msgstr "फेसबुक चैट प्लगइन सेटिंग्स"
 
-#: options.php:111
+#: options.php:110
 msgid "Getting Started?"
 msgstr "शुरू करना?"
 
-#: options.php:112
+#: options.php:111
 msgid ""
-"Let people start a conversation on your website and continue in Messenger. "
-"It's easy to set up. Chats started on your website can be continued in the "
-"customers' Messenger app, so you never lose connections with your customers. "
-"Even those without a Facebook Messenger account can chat with you in guest "
-"mode, so you can reach more customers than ever."
+"Let people start a conversation on your website and continue in Messenger. It's easy to set "
+"up. Chats started on your website can be continued in the customers' Messenger app, so you "
+"never lose connections with your customers. Even those without a Facebook Messenger account "
+"can chat with you in guest mode, so you can reach more customers than ever."
 msgstr ""
 "लोगों को बातचीत शुरू करने दें\n"
-"अपनी वेबसाइट और मैसेंजर में जारी रखें। इसे स्थापित करना आसान है। आपकी वेबसाइट पर शुरू की "
-"गई चैट को ग्राहकों में जारी रखा जा सकता है।\n"
+"अपनी वेबसाइट और मैसेंजर में जारी रखें। इसे स्थापित करना आसान है। आपकी वेबसाइट पर शुरू की गई चैट को ग्राहकों में "
+"जारी रखा जा सकता है।\n"
 "मैसेंजर ऐप, ताकि आप अपने ग्राहकों के साथ कभी भी कनेक्शन न खोएं।\n"
 "यहां तक ​​कि बिना फेसबुक मैसेंजर अकाउंट वाले भी आपसे चैट कर सकते हैं\n"
 "अतिथि मोड में, ताकि आप पहले से कहीं अधिक ग्राहकों तक पहुंच सकें।"
@@ -60,48 +133,65 @@ msgid "Edit Chat Plugin"
 msgstr "चैट प्लगइन संपादित करें"
 
 #: options.php:144
-msgid ""
-"The plugin code has already been added into your website. You can always go "
-"back through the setup process to customize the plugin."
+msgid "Setup status"
 msgstr ""
-"प्लगइन कोड आपकी वेबसाइट में पहले ही जोड़ा जा चुका है। आप प्लगइन को कस्टमाइज़ करने के लिए "
-"हमेशा सेटअप प्रक्रिया के माध्यम से वापस जा सकते हैं।"
 
-#: options.php:153
+#: options.php:145
+msgid ""
+"The plugin code has already been added into your website. You can always go back through the "
+"setup process to customize the plugin."
+msgstr ""
+"प्लगइन कोड आपकी वेबसाइट में पहले ही जोड़ा जा चुका है। आप प्लगइन को कस्टमाइज़ करने के लिए हमेशा सेटअप प्रक्रिया "
+"के माध्यम से वापस जा सकते हैं।"
+
+#: options.php:149
+msgid "Advanced Configuration"
+msgstr "एडवांस कॉन्फ़िगरेशन"
+
+#: options.php:159
+msgid "Deploy Chat plugin on:"
+msgstr "यहाँ चैट प्लग-इन को काम में लें..."
+msgstr ""
+#: options.php:164
+msgid "All pages"
+msgstr "सभी पेज"
+
+#: options.php:168
+msgid "Custom pages"
+msgstr "कस्टम पेज"
+
+#: options.php:260
+msgid "Product pages"
+msgstr "प्रोडक्ट पेज"
+
+#: options.php:268
+msgid "Error saving settings."
+msgstr ""
+
+#: options.php:270
+msgid "Settings saved."
+msgstr ""
+
+#: options.php:272
+msgid "Saving settings..."
+msgstr ""
+
+#: options.php:285
 msgid "Use of this plugin is subject to Facebook's Platform Terms"
 msgstr "इस प्लगइन का उपयोग फेसबुक के प्लेटफ़ॉर्म शर्तों के अधीन है"
 
-#: options.php:156
+#: options.php:287
 msgid "Having a problem setting up or using the Chat Plugin?"
 msgstr "चैट प्लगइन स्थापित करने या उपयोग करने में कोई समस्या है?"
 
-#: options.php:158
+#: options.php:291
 msgid "Please consult our Troubleshooting Guide."
 msgstr "कृपया हमारे समस्या निवारण गाइड से परामर्श करें।"
 
-#: options.php:161
+#: options.php:294
 msgid ""
-"If the troubleshooting steps in the guide do not solve your problem, please "
-"post in the plugin support forum."
+"If the troubleshooting steps in the guide do not solve your problem, please post in the plugin "
+"support forum."
 msgstr ""
-"यदि मार्गदर्शिका के समस्या निवारण चरण आपकी समस्या का समाधान नहीं करते हैं, तो कृपया "
-"प्लगइन समर्थन फोरम में पोस्ट करें।"
-
-msgid ""
-"With a few clicks, you can add the Facebook Chat Plugin to your website, "
-"enabling customers to message you while browsing your website. To see and "
-"reply to those messages, simply use the same messaging tools you use for "
-"your Facebook messaging, on desktop at facebook.com, Facebook Page Manager "
-"App (available on iOS and Android), or by adding your page account to "
-"Messenger. It's free, easy to install and comes with a user interface your "
-"customers are already familiar with."
-msgstr ""
-"कुछ क्लिकों के साथ, आप अपनी वेबसाइट पर फेसबुक चैट प्लगइन जोड़ सकते हैं, जिससे ग्राहक आपकी "
-"वेबसाइट ब्राउज़ करते समय आपको संदेश दे सकेंगे। उन संदेशों को देखने और उनका जवाब देने के लिए, "
-"बस उन्हीं मैसेजिंग टूल्स का उपयोग करें, जिन्हें आप अपने फेसबुक मैसेजिंग के लिए उपयोग करते हैं, "
-"फेसबुक पर डेस्कटॉप पर, फेसबुक पेज मैनेजर ऐप (आईओएस और एंड्रॉइड पर उपलब्ध), या मैसेंजर पर "
-"अपने पेज अकाउंट को जोड़कर। यह मुफ़्त है, स्थापित करना आसान है और एक उपयोगकर्ता इंटरफ़ेस के "
-"साथ आता है जो आपके ग्राहक पहले से परिचित हैं।"
-
-msgid "The Official Facebook Chat Plugin"
-msgstr "आधिकारिक फेसबुक चैट प्लगइन"
+"यदि मार्गदर्शिका के समस्या निवारण चरण आपकी समस्या का समाधान नहीं करते हैं, तो कृपया प्लगइन समर्थन फोरम में "
+"पोस्ट करें।"

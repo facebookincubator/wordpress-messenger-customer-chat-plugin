@@ -2,8 +2,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: The Official Facebook Chat Plugin\n"
 "POT-Creation-Date: 2020-11-13 16:39-0800\n"
-"PO-Revision-Date: 2020-12-02 16:14-0800\n"
+"PO-Revision-Date: 2021-05-12 00:01+0800\n"
+"Last-Translator: \n"
 "Language-Team: Facebook\n"
+"Language: pl_PL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,32 +14,110 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
 "|| n%100>14) ? 1 : 2);\n"
 "X-Poedit-KeywordsList: __;_e;esc_html__\n"
-"Last-Translator: \n"
-"Language: pl_PL\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: facebook-messenger-customer-chat.php:44
-#: facebook-messenger-customer-chat.php:61
+#: facebook-messenger-customer-chat.php:3
+msgid "The Official Facebook Chat Plugin"
+msgstr "Oficjalna wtyczka Czatu Facebooka"
+
+#: facebook-messenger-customer-chat.php:4
+msgid ""
+"With a few clicks, you can add the Facebook Chat Plugin to your website, "
+"enabling customers to message you while browsing your website. To see and "
+"reply to those messages, simply use the same messaging tools you use for "
+"your Facebook messaging, on desktop at facebook.com, Facebook Page Manager "
+"App (available on iOS and Android), or by adding your page account to "
+"Messenger. It's free, easy to install and comes with a user interface your "
+"customers are already familiar with."
+msgstr ""
+"Wystarczy kilka kliknięć, aby dodać do witryny wtyczkę Czat Facebooka, która "
+"umożliwi klientom wysyłanie do Ciebie wiadomości podczas przeglądania "
+"witryny. Aby przeglądać te wiadomości i odpowiadać na nie, skorzystaj z tych "
+"samych narzędzi do wysyłania wiadomości, których używasz na potrzeby "
+"wiadomości na Facebooku na komputerze, dostępnych pod adresem facebook.com, "
+"lub w aplikacji Menedżer stron na Facebooku (dostępnej na urządzenia z "
+"systemem iOS lub Android), lub dodaj konto swojej strony do Messengera. "
+"Opcja jest bezpłatna, łatwa do zainstalowania i ma interfejs użytkownika, "
+"który dobrze znają klienci."
+
+#: facebook-messenger-customer-chat.php:53
+#: facebook-messenger-customer-chat.php:70
 msgid "Settings"
 msgstr "Ustawienia"
 
-#: facebook-messenger-customer-chat.php:68
+#: facebook-messenger-customer-chat.php:77
 msgid "FAQ"
 msgstr "NAJCZĘŚCIEJ ZADAWANE PYTANIA"
 
-#: facebook-messenger-customer-chat.php:74
+#: facebook-messenger-customer-chat.php:83
 msgid "Support"
 msgstr "Pomoc"
 
-#: options.php:107
+#: facebook-messenger-customer-chat.php:173
+msgid "Cancel"
+msgstr ""
+
+#: facebook-messenger-customer-chat.php:183
+msgid "We value your feedback."
+msgstr "Cenimy Twoją opinię."
+
+#: facebook-messenger-customer-chat.php:188
+msgid "Please let us know why you’re deactivating Facebook Chat Plugin."
+msgstr "Daj nam znać, dlaczego wyłączasz wtyczkę czatu na Facebooku."
+
+#: facebook-messenger-customer-chat.php:191
+msgid "I’m unable to get the plugin to work"
+msgstr "Nie jestem w stanie uruchomić wtyczki"
+
+#: facebook-messenger-customer-chat.php:192
+msgid "I no longer need a live chat feature"
+msgstr ""
+
+#: facebook-messenger-customer-chat.php:193
+msgid "I’m using a different live chat plugin"
+msgstr "Używam innej wtyczki do czatu na żywo"
+
+#: facebook-messenger-customer-chat.php:198
+msgid "Name of plugin:"
+msgstr "Nazwa wtyczki:"
+
+#: facebook-messenger-customer-chat.php:199
+msgid "This is a temporary deactivation. I’ll be back!"
+msgstr "To tymczasowa dezaktywacja. Wrócę!"
+
+#: facebook-messenger-customer-chat.php:200
+msgid "Other"
+msgstr "Inny powód"
+
+#: facebook-messenger-customer-chat.php:205
+msgid "Comments:"
+msgstr "Komentarze:"
+
+#: facebook-messenger-customer-chat.php:208
+msgid "Submit"
+msgstr "Prześlij"
+
+#: facebook-messenger-customer-chat.php:214
+msgid "Thank you. We appreciate your feedback."
+msgstr "Dziękujemy. Dziękujemy za przesłanie opinii."
+
+#: options.php:22
+msgid "Plugin Settings"
+msgstr ""
+
+#: options.php:23
+msgid "Facebook Chat"
+msgstr ""
+
+#: options.php:106
 msgid "Facebook Chat Plugin Settings"
 msgstr "Ustawienia wtyczki Czatu Facebooka"
 
-#: options.php:111
+#: options.php:110
 msgid "Getting Started?"
 msgstr "Pierwsze kroki"
 
-#: options.php:112
+#: options.php:111
 msgid ""
 "Let people start a conversation on your website and continue in Messenger. "
 "It's easy to set up. Chats started on your website can be continued in the "
@@ -61,6 +141,10 @@ msgid "Edit Chat Plugin"
 msgstr "Edytowanie wtyczki do czatu"
 
 #: options.php:144
+msgid "Setup status"
+msgstr ""
+
+#: options.php:145
 msgid ""
 "The plugin code has already been added into your website. You can always go "
 "back through the setup process to customize the plugin."
@@ -68,44 +152,54 @@ msgstr ""
 "Kod wtyczki został już dodany do Twojej witryny internetowej. Zawsze możesz "
 "wrócić do procesu konfiguracji, aby dostosować wtyczkę."
 
-#: options.php:153
+#: options.php:149
+msgid "Advanced Configuration"
+msgstr "Konfiguracja zaawansowana"
+
+#: options.php:159
+msgid "Deploy Chat plugin on:"
+msgstr "Wdrożenie wtyczki czatu..."
+msgstr ""
+#: options.php:164
+msgid "All pages"
+msgstr "Wszystkie strony"
+
+#: options.php:168
+msgid "Custom pages"
+msgstr "Niestandardowe strony"
+
+#: options.php:260
+msgid "Product pages"
+msgstr "Strony produktów"
+
+#: options.php:268
+msgid "Error saving settings."
+msgstr ""
+
+#: options.php:270
+msgid "Settings saved."
+msgstr ""
+
+#: options.php:272
+msgid "Saving settings..."
+msgstr ""
+
+#: options.php:285
 msgid "Use of this plugin is subject to Facebook's Platform Terms"
 msgstr "Korzystanie z tej wtyczki podlega Regulaminowi platformy Facebook"
 
-#: options.php:156
+#: options.php:287
 msgid "Having a problem setting up or using the Chat Plugin?"
 msgstr "Masz problem z konfigurowaniem wtyczki czatu lub korzystaniem z niej?"
 
-#: options.php:158
+#: options.php:291
 msgid "Please consult our Troubleshooting Guide."
 msgstr "Skorzystaj z przewodnika po rozwiązywaniu problemów."
 
-#: options.php:161
+#: options.php:294
 msgid ""
 "If the troubleshooting steps in the guide do not solve your problem, please "
 "post in the plugin support forum."
 msgstr ""
 "Jeżeli propozycje rozwiązania problemu opisane w przewodniku nie rozwiązują "
 "Twojego problemu,opisz go na forum pomocy dotyczącej wtyczki."
-
-msgid ""
-"With a few clicks, you can add the Facebook Chat Plugin to your website, "
-"enabling customers to message you while browsing your website. To see and "
-"reply to those messages, simply use the same messaging tools you use for "
-"your Facebook messaging, on desktop at facebook.com, Facebook Page Manager "
-"App (available on iOS and Android), or by adding your page account to "
-"Messenger. It's free, easy to install and comes with a user interface your "
-"customers are already familiar with."
-msgstr ""
-"Wystarczy kilka kliknięć, aby dodać do witryny wtyczkę Czat Facebooka, która "
-"umożliwi klientom wysyłanie do Ciebie wiadomości podczas przeglądania "
-"witryny. Aby przeglądać te wiadomości i odpowiadać na nie, skorzystaj z tych "
-"samych narzędzi do wysyłania wiadomości, których używasz na potrzeby "
-"wiadomości na Facebooku na komputerze, dostępnych pod adresem facebook.com, "
-"lub w aplikacji Menedżer stron na Facebooku (dostępnej na urządzenia z "
-"systemem iOS lub Android), lub dodaj konto swojej strony do Messengera. "
-"Opcja jest bezpłatna, łatwa do zainstalowania i ma interfejs użytkownika, "
-"który dobrze znają klienci."
-
-msgid "The Official Facebook Chat Plugin"
-msgstr "Oficjalna wtyczka Czatu Facebooka"

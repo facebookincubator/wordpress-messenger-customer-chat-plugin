@@ -2,8 +2,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: The Official Facebook Chat Plugin\n"
 "POT-Creation-Date: 2020-11-13 16:39-0800\n"
-"PO-Revision-Date: 2020-12-03 10:20-0800\n"
+"PO-Revision-Date: 2021-05-11 17:26+0800\n"
+"Last-Translator: \n"
 "Language-Team: Facebook\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11,32 +13,106 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-KeywordsList: __;_e;esc_html__\n"
-"Last-Translator: \n"
-"Language: zh_CN\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: facebook-messenger-customer-chat.php:44
-#: facebook-messenger-customer-chat.php:61
+#: facebook-messenger-customer-chat.php:3
+msgid "The Official Facebook Chat Plugin"
+msgstr "官方 Facebook 聊天插件"
+
+#: facebook-messenger-customer-chat.php:4
+msgid ""
+"With a few clicks, you can add the Facebook Chat Plugin to your website, "
+"enabling customers to message you while browsing your website. To see and "
+"reply to those messages, simply use the same messaging tools you use for "
+"your Facebook messaging, on desktop at facebook.com, Facebook Page Manager "
+"App (available on iOS and Android), or by adding your page account to "
+"Messenger. It's free, easy to install and comes with a user interface your "
+"customers are already familiar with."
+msgstr ""
+"只需几次点击 您可以将 Facebook 聊天插件添加到您的网站 让客户能够在浏览您的网"
+"站时向您发消息。要查看和回复这些消息 只需使用用于 Facebook 消息服务的相同消息"
+"工具即可 在台式电脑上访问 facebook.com Facebook 主页管理应用（适用于 iOS 和 "
+"Android 系统） 或者将您的主页帐户添加到 Messenger。完全免费 易于安装，并且采"
+"用您的客户所熟悉的用户界面。"
+
+#: facebook-messenger-customer-chat.php:53
+#: facebook-messenger-customer-chat.php:70
 msgid "Settings"
 msgstr "设置"
 
-#: facebook-messenger-customer-chat.php:68
+#: facebook-messenger-customer-chat.php:77
 msgid "FAQ"
 msgstr "常见问题"
 
-#: facebook-messenger-customer-chat.php:74
+#: facebook-messenger-customer-chat.php:83
 msgid "Support"
 msgstr "支持"
 
-#: options.php:107
+#: facebook-messenger-customer-chat.php:173
+msgid "Cancel"
+msgstr ""
+
+#: facebook-messenger-customer-chat.php:183
+msgid "We value your feedback."
+msgstr "我们很重视您的反馈。"
+
+#: facebook-messenger-customer-chat.php:188
+msgid "Please let us know why you’re deactivating Facebook Chat Plugin."
+msgstr "请告诉我们，您为什么要停用 Facebook 聊天插件。"
+
+#: facebook-messenger-customer-chat.php:191
+msgid "I’m unable to get the plugin to work"
+msgstr "插件无法正常工作"
+
+#: facebook-messenger-customer-chat.php:192
+msgid "I no longer need a live chat feature"
+msgstr ""
+
+#: facebook-messenger-customer-chat.php:193
+msgid "I’m using a different live chat plugin"
+msgstr "我在使用另外一款实时聊天插件"
+
+#: facebook-messenger-customer-chat.php:198
+msgid "Name of plugin:"
+msgstr "插件名称："
+
+#: facebook-messenger-customer-chat.php:199
+msgid "This is a temporary deactivation. I’ll be back!"
+msgstr "只是暂时停用。我后面会重新启用！"
+
+#: facebook-messenger-customer-chat.php:200
+msgid "Other"
+msgstr "其他"
+
+#: facebook-messenger-customer-chat.php:205
+msgid "Comments:"
+msgstr "评论："
+
+#: facebook-messenger-customer-chat.php:208
+msgid "Submit"
+msgstr "提交"
+
+#: facebook-messenger-customer-chat.php:214
+msgid "Thank you. We appreciate your feedback."
+msgstr "谢谢！我们非常感谢您的反馈。"
+
+#: options.php:22
+msgid "Plugin Settings"
+msgstr ""
+
+#: options.php:23
+msgid "Facebook Chat"
+msgstr ""
+
+#: options.php:106
 msgid "Facebook Chat Plugin Settings"
 msgstr "Facebook 聊天插件设置"
 
-#: options.php:111
+#: options.php:110
 msgid "Getting Started?"
 msgstr "开始使用"
 
-#: options.php:112
+#: options.php:111
 msgid ""
 "Let people start a conversation on your website and continue in Messenger. "
 "It's easy to set up. Chats started on your website can be continued in the "
@@ -58,43 +134,61 @@ msgid "Edit Chat Plugin"
 msgstr "编辑聊天插件"
 
 #: options.php:144
+msgid "Setup status"
+msgstr ""
+
+#: options.php:145
 msgid ""
 "The plugin code has already been added into your website. You can always go "
 "back through the setup process to customize the plugin."
 msgstr "插件代码已添加到您的网站上。您随时可以返回设置流程来定制插件。"
 
-#: options.php:153
+#: options.php:149
+msgid "Advanced Configuration"
+msgstr "高级配置"
+
+#: options.php:159
+msgid "Deploy Chat plugin on:"
+msgstr "为...配置聊天插件"
+msgstr ""
+#: options.php:164
+msgid "All pages"
+msgstr "所有页面"
+
+#: options.php:168
+msgid "Custom pages"
+msgstr "自定义页面"
+
+#: options.php:260
+msgid "Product pages"
+msgstr "商品页面"
+
+#: options.php:268
+msgid "Error saving settings."
+msgstr ""
+
+#: options.php:270
+msgid "Settings saved."
+msgstr ""
+
+#: options.php:272
+msgid "Saving settings..."
+msgstr ""
+
+#: options.php:285
 msgid "Use of this plugin is subject to Facebook's Platform Terms"
 msgstr "使用此插件需遵守 Facebook 开放平台条款"
 
-#: options.php:156
+#: options.php:287
 msgid "Having a problem setting up or using the Chat Plugin?"
 msgstr "在设置或使用聊天插件时遇到问题？"
 
-#: options.php:158
+#: options.php:291
 msgid "Please consult our Troubleshooting Guide."
 msgstr "请参阅我们的疑难解答指南。"
 
-#: options.php:161
+#: options.php:294
 msgid ""
 "If the troubleshooting steps in the guide do not solve your problem, please "
 "post in the plugin support forum."
 msgstr "如果采用指南中的所述步骤后仍无法解决问题，请 在插件支持论坛中发帖。"
-
-msgid ""
-"With a few clicks, you can add the Facebook Chat Plugin to your website, "
-"enabling customers to message you while browsing your website. To see and "
-"reply to those messages, simply use the same messaging tools you use for "
-"your Facebook messaging, on desktop at facebook.com, Facebook Page Manager "
-"App (available on iOS and Android), or by adding your page account to "
-"Messenger. It's free, easy to install and comes with a user interface your "
-"customers are already familiar with."
-msgstr ""
-"只需几次点击 您可以将 Facebook 聊天插件添加到您的网站 让客户能够在浏览您的网"
-"站时向您发消息。要查看和回复这些消息 只需使用用于 Facebook 消息服务的相同消息"
-"工具即可 在台式电脑上访问 facebook.com Facebook 主页管理应用（适用于 iOS 和 "
-"Android 系统） 或者将您的主页帐户添加到 Messenger。完全免费 易于安装，并且采"
-"用您的客户所熟悉的用户界面。"
-
-msgid "The Official Facebook Chat Plugin"
-msgstr "官方 Facebook 聊天插件"

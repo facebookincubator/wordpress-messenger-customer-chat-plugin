@@ -2,23 +2,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: The Official Facebook Chat Plugin\n"
 "POT-Creation-Date: 2020-11-13 16:39-0800\n"
-"PO-Revision-Date: 2021-05-11 23:58+0800\n"
+"PO-Revision-Date: 2021-05-12 00:03+0800\n"
 "Last-Translator: \n"
 "Language-Team: Facebook\n"
-"Language: he_IL\n"
+"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.4.2\n"
 "X-Poedit-Basepath: ..\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n==2 ? 1 : n>10 && n%10==0 ? "
-"2 : 3);\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-KeywordsList: __;_e;esc_html__\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: facebook-messenger-customer-chat.php:3
 msgid "The Official Facebook Chat Plugin"
-msgstr "פלאגין הצ'אט הרשמי של פייסבוק"
+msgstr "Plugin chat trên Facebook chính thức"
 
 #: facebook-messenger-customer-chat.php:4
 msgid ""
@@ -30,25 +29,27 @@ msgid ""
 "Messenger. It's free, easy to install and comes with a user interface your "
 "customers are already familiar with."
 msgstr ""
-"באמצעות קליקים ספורים תוכל להוסיף לאתר שלך את הפלאגין של הצ'אט של פייסבוק מה "
-"שיאפשר ללקוחות לשלוח לך הודעות במהלך הגלישה באתר שלך. כדי לראות את ההודעות "
-"האלה ולהשיב להן פשוט השתמש באותם כלים לשליחה וקבלה של הודעות המשמשים אותך "
-"להודעות בפייסבוק במחשב בכתובת facebook.com האפליקציה Pages Manager של "
-"פייסבוק (זמינה ב-iOS וב-Android) או על ידי הוספת חשבון הדף שלך ל-Messenger "
-"זה בחינם קל להתקנה ומגיע עם ממשק משתמש שהלקוחות שלך כבר מכירים.\""
+"Chỉ bằng một vài lượt click bạn có thể thêm plugin chat trên Facebook vào "
+"trang web của mình để khách hàng nhắn tin cho bạn trong khi lướt xem trang "
+"web của bạn. Để xem và trả lời những tin nhắn đó, bạn chỉ cần sử dụng các "
+"công cụ nhắn tin như khi nhắn tin trên Facebook bằng máy tính tại facebook."
+"com Ứng dụng Trình quản lý Trang Facebook (có trên iOS và Android) hoặc bằng "
+"cách thêm tài khoản trang của bạn vào Messenger. Hoàn toàn miễn phí dễ dàng "
+"cài đặt và đi kèm với giao diện người dùng mà khách hàng của bạn đã quen "
+"thuộc."
 
 #: facebook-messenger-customer-chat.php:53
 #: facebook-messenger-customer-chat.php:70
 msgid "Settings"
-msgstr "הגדרות"
+msgstr "Cài đặt"
 
 #: facebook-messenger-customer-chat.php:77
 msgid "FAQ"
-msgstr "שאלות נפוצות"
+msgstr "CÂU HỎI THƯỜNG GẶP"
 
 #: facebook-messenger-customer-chat.php:83
 msgid "Support"
-msgstr "תמיכה"
+msgstr "Hỗ trợ"
 
 #: facebook-messenger-customer-chat.php:173
 msgid "Cancel"
@@ -56,15 +57,15 @@ msgstr ""
 
 #: facebook-messenger-customer-chat.php:183
 msgid "We value your feedback."
-msgstr "אנחנו מעריכים את המשוב שלך."
+msgstr "Chúng tôi rất trân trọng phản hồi của bạn."
 
 #: facebook-messenger-customer-chat.php:188
 msgid "Please let us know why you’re deactivating Facebook Chat Plugin."
-msgstr "ספר לנו בבקשה למה אתה משבית את הפלאגין של הצ'אט של פייסבוק."
+msgstr "Vui lòng cho chúng tôi biết lý do bạn hủy kích hoạt plugin Chat của Facebook."
 
 #: facebook-messenger-customer-chat.php:191
 msgid "I’m unable to get the plugin to work"
-msgstr "אני לא מצליח לגרום לפלאגין לעבוד"
+msgstr "Plugin này không hoạt động"
 
 #: facebook-messenger-customer-chat.php:192
 msgid "I no longer need a live chat feature"
@@ -72,31 +73,31 @@ msgstr ""
 
 #: facebook-messenger-customer-chat.php:193
 msgid "I’m using a different live chat plugin"
-msgstr "אני משתמש בפלאגין אחר של צ'אט חי"
+msgstr "Tôi đang dùng một plugin chat trực tiếp khác"
 
 #: facebook-messenger-customer-chat.php:198
 msgid "Name of plugin:"
-msgstr "שם הפלאגין:"
+msgstr "Tên của plugin:"
 
 #: facebook-messenger-customer-chat.php:199
 msgid "This is a temporary deactivation. I’ll be back!"
-msgstr "זוהי השבתה זמנית. אני אחזור!"
+msgstr "Tôi hủy kích hoạt tạm thời thôi. Tôi sẽ kích hoạt lại sau!"
 
 #: facebook-messenger-customer-chat.php:200
 msgid "Other"
-msgstr "אחר"
+msgstr "Lý do khác"
 
 #: facebook-messenger-customer-chat.php:205
 msgid "Comments:"
-msgstr "הערות:"
+msgstr "Bình luận:"
 
 #: facebook-messenger-customer-chat.php:208
 msgid "Submit"
-msgstr "שלח"
+msgstr "Gửi"
 
 #: facebook-messenger-customer-chat.php:214
 msgid "Thank you. We appreciate your feedback."
-msgstr "תודה. אנחנו מעריכים את המשוב שלך."
+msgstr "Cảm ơn bạn! Chúng tôi đánh giá cao phản hồi của bạn."
 
 #: options.php:22
 msgid "Plugin Settings"
@@ -108,11 +109,11 @@ msgstr ""
 
 #: options.php:106
 msgid "Facebook Chat Plugin Settings"
-msgstr "ההגדרות של פלאגין הצ'אט של פייסבוק"
+msgstr "Cài đặt plugin chat trên Facebook"
 
 #: options.php:110
 msgid "Getting Started?"
-msgstr "תחילת העבודה"
+msgstr "Bắt đầu?"
 
 #: options.php:111
 msgid ""
@@ -122,18 +123,20 @@ msgid ""
 "Even those without a Facebook Messenger account can chat with you in guest "
 "mode, so you can reach more customers than ever."
 msgstr ""
-"אפשר לאנשים להתחיל שיחה באתר שלך ולהמשיך ב-Messenger. קל להגדיר זאת. ניתן "
-"להמשיך צ'אטים שהותחלו באתר שלך באפליקציית Messenger של הלקוחות, כך שלעולם לא "
-"תאבד חיבורים עם לקוחות. אפילו לקוחות ללא חשבון Facebook Messenger יוכלו "
-"לשוחח איתך בצ'אט במצב אורח, כך שתוכל להגיע ללקוחות רבים יותר מאי-פעם."
+"Hãy để mọi người bắt đầu cuộc trò chuyện trên trang web của bạn và tiếp tục "
+"trên Messenger. Quá trình thiết lập thật dễ dàng. Các đoạn chat trên trang "
+"web có thể tiếp tục diễn ra trong ứng dụng Messenger của khách hàng, nên bạn "
+"sẽ không bao giờ bỏ lỡ cơ hội kết nối với khách hàng. Thậm chí, những người "
+"không có tài khoản Facebook Messenger cũng có thể chat với bạn ở chế độ "
+"khách, vậy nên bạn có thể tiếp cận nhiều khách hàng hơn bao giờ hết."
 
 #: options.php:128
 msgid "Setup Chat Plugin"
-msgstr "הגדרת הפלאגין של הצ'אט"
+msgstr "Thiết lập plugin chat"
 
 #: options.php:130
 msgid "Edit Chat Plugin"
-msgstr "עריכת הפלאגין של הצ'אט"
+msgstr "Chỉnh sửa plugin chat"
 
 #: options.php:144
 msgid "Setup status"
@@ -144,28 +147,28 @@ msgid ""
 "The plugin code has already been added into your website. You can always go "
 "back through the setup process to customize the plugin."
 msgstr ""
-"קוד הפלאגין כבר נוסף לאתר שלך. אתה תמיד יכול לחזור לתהליך ההגדרה כדי להתאים "
-"אישית את הפלאגין."
+"Mã plug đã được thêm vào trang web của bạn. Bạn luôn có thể quay lại quy "
+"trình thiết lập để tùy chỉnh plugin."
 
 #: options.php:149
 msgid "Advanced Configuration"
-msgstr "תצורה מתקדמת"
+msgstr "Cấu hình nâng cao"
 
 #: options.php:159
 msgid "Deploy Chat plugin on:"
-msgstr "הטמעת פלאגין של צ'אט ב..."
+msgstr "Triển khai plugin Chat trên..."
 msgstr ""
 #: options.php:164
 msgid "All pages"
-msgstr "כל הדפים"
+msgstr "Tất cả các trang"
 
 #: options.php:168
 msgid "Custom pages"
-msgstr "דפים מותאמים אישית"
+msgstr "Trang tùy chỉnh"
 
 #: options.php:260
 msgid "Product pages"
-msgstr "דפי מוצרים"
+msgstr "Trang sản phẩm"
 
 #: options.php:268
 msgid "Error saving settings."
@@ -181,22 +184,20 @@ msgstr ""
 
 #: options.php:285
 msgid "Use of this plugin is subject to Facebook's Platform Terms"
-msgstr ""
-"קוד הפלאגין כבר נוסף לאתר שלך. אתה תמיד יכול לחזור לתהליך ההגדרה כדי להתאים "
-"אישית את הפלאגין."
+msgstr "Việc sử dụng plugin này tuân theo các Điều khoản nền tảng của Facebook"
 
 #: options.php:287
 msgid "Having a problem setting up or using the Chat Plugin?"
-msgstr "השימוש בפלאגין זה כפוף לתנאי הפלטפורמה של פייסבוק"
+msgstr "Bạn gặp sự cố khi thiết lập hoặc sử dụng plugin chat?"
 
 #: options.php:291
 msgid "Please consult our Troubleshooting Guide."
-msgstr "יש לך בעיה בהגדרה או בשימוש בפלאגין של הצ'אט?"
+msgstr "Vui lòng tham khảo Hướng dẫn khắc phục sự cố của chúng tôi."
 
 #: options.php:294
 msgid ""
 "If the troubleshooting steps in the guide do not solve your problem, please "
 "post in the plugin support forum."
 msgstr ""
-"אם שלבי פתרון הבעיות במדריך לא יפתרו את הבעיה שלך, פרסם פוסט בפורום התמיכה "
-"של הפלאגין."
+"Nếu các bước khắc phục sự cố trong hướng dẫn này không giải quyết được vấn "
+"đề của bạn, vui lòng đăng lên diễn đàn hỗ trợ plugin."

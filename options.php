@@ -154,8 +154,8 @@ function fbmcc_integration_settings() {
         <h2><?=esc_html__( 'Advanced Configuration', 'facebook-messenger-customer-chat' )?></h2>
         <?php
           $fbmcc_page_types = get_option( 'fbmcc_page_types' );
-          $active_pages = $fbmcc_page_types['pages'];
-          if (!$active_pages) { $active_pages = Array(); }
+          $active_pages = Array();
+          if ($fbmcc_page_types) { $active_pages = $fbmcc_page_types['pages']; }
         ?>
         <ul>
           <li>
@@ -169,7 +169,7 @@ function fbmcc_integration_settings() {
                       <?=esc_html__( 'All pages', 'facebook-messenger-customer-chat' )?>
                     </option>
                     <option value="2"
-                    <?php if ($fbmcc_page_types['all'] == "0") { echo "selected"; } ?>>
+                    <?php if (($fbmcc_page_types) && ($fbmcc_page_types['all'] == "0")) { echo "selected"; } ?>>
                       <?=esc_html__( 'Custom pages', 'facebook-messenger-customer-chat' )?>
                     </option>
                   </select>
@@ -243,7 +243,7 @@ function fbmcc_integration_settings() {
                           ?>
                           <li>
                             <input type="checkbox" id="pageid_<?php echo $page->ID; ?>" class="fbmcc-displaySetting fbmcc-submenuOption fbmcc-activePageOption"<?php
-                              if( ($fbmcc_page_types['pages_all'] == "1") || (in_array( $page->ID, $active_pages )) ) {
+                              if(($fbmcc_page_types) && (($fbmcc_page_types['pages_all'] == "1") || (in_array( $page->ID, $active_pages ))) ) {
                                 echo 'checked';
                               }
                             ?>/> <?php echo $page->post_title; ?>

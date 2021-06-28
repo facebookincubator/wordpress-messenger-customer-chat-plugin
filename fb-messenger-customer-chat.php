@@ -25,6 +25,8 @@ Domain Path: /languages
 class Facebook_Messenger_Customer_Chat {
   function __construct() {
     include( plugin_dir_path( __FILE__ ) . 'options.php' );
+    require  __DIR__ . '/vendor/persist-admin-notices-dismissal/persist-admin-notices-dismissal.php';
+    add_action( 'admin_init', array( 'PAnD', 'init' ) );
     add_action( 'current_screen', array( $this, 'show_deactivation_feedback_form' ) );
     add_action( 'wp_footer', array( $this, 'fbmcc_inject_messenger' ) );
     add_filter( 'plugin_action_links',
@@ -32,6 +34,7 @@ class Facebook_Messenger_Customer_Chat {
     add_filter( 'plugin_row_meta',
                 array( $this, 'fbmcc_register_plugin_links'), 10, 2 );
     add_action( 'plugins_loaded', array($this, 'fbmcc_i18n') );
+    add_action( 'admin_notices', array($this, 'fbmcc_admin_notice_review') );
   }
 
   public function show_deactivation_feedback_form() {
@@ -218,6 +221,22 @@ class Facebook_Messenger_Customer_Chat {
     </div>
     <?php
   }
+
+  function fbmcc_admin_notice_review() {
+    if ( ! PAnD::is_admin_notice_active( 'disable-done-notice-forever' ) ) {
+      return;
+    }
+    $message = '<h4>How is the Facebook Chat plugin working out for you and your visitors?</h4><p>We\'d love to hear your feedback! <a href="https://wordpress.org/support/plugin/wp-post-modal/reviews/" target="_blank">Please leave us a review.</a></p>';
+    ?>
+    <div class="notice notice-success is-dismissible admin-notice-installed" data-dismissible="disable-done-notice-forever">
+      <?=$message;?>
+      <button type="button" class="notice-dismiss">
+        <span class="screen-reader-text">Dismiss this notice.</span>
+      </button>
+    </div>
+    <?php
+  }
+
 }
 
 new Facebook_Messenger_Customer_Chat();

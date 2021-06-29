@@ -223,20 +223,55 @@ class Facebook_Messenger_Customer_Chat {
   }
 
   function fbmcc_admin_notice_review() {
-    if ( ! PAnD::is_admin_notice_active( 'disable-done-notice-forever' ) ) {
+    if ( ! PAnD::is_admin_notice_active( 'disable-done-notice-forever' ) ||
+         ! $this->fbmcc_should_show_admin_notice_review() ) {
       return;
     }
     $message = '<h4>How is the Facebook Chat plugin working out for you and your visitors?</h4><p>We\'d love to hear your feedback! <a href="https://wordpress.org/support/plugin/wp-post-modal/reviews/" target="_blank">Please leave us a review.</a></p>';
     ?>
-    <div class="notice notice-success is-dismissible admin-notice-installed" data-dismissible="disable-done-notice-forever">
+    <div class="notice notice-success is-dismissible" data-dismissible="disable-done-notice-forever">
       <?=$message;?>
-      <button type="button" class="notice-dismiss">
-        <span class="screen-reader-text">Dismiss this notice.</span>
-      </button>
     </div>
     <?php
   }
 
+  function fbmcc_should_show_admin_notice_review() {
+    $page_id = get_option('fbmcc_pageID');
+    if ($page_id == false) {
+      return false;
+    }
+
+    if (current_user_can( 'manage_options' ) && !get_option( 'fbmcc_install_ts' )) {
+      update_option('fbmcc_install_ts', time());
+      return false;
+    }
+
+    $url = 'https://graph.facebook.com/v10.0/fb3p_chat_plugin/';
+    $access_token = '1214154679040756|02b35c7bc067140ef19ebfe0eb3f420e';
+
+    $url = $url.'?page_id='.$page_id.'&access_token='.$access_token;
+    $args = array(
+      'headers' => array( "Content-type" => "application/json" ),
+      'timeout' => 5
+    );
+
+    $response = wp_remote_get($url, $args);
+    $res_body = wp_remote_retrieve_body($response);
+    $res_json = json_decode($res_body);
+
+    if ( is_wp_error( $response ) || $res_json->enabled == false) {
+      return false;
+    }
+
+    $install_ts = get_option('fbmcc_install_ts');
+    $latest = (new DateTime())->setTimestamp($install_ts);
+    $diff_days = $latest->diff(new DateTime())->d;
+    if ($diff_days < 7) {
+      return false;
+    }
+
+    return true;
+  }
 }
 
 new Facebook_Messenger_Customer_Chat();

@@ -54,6 +54,8 @@ function fbmcc_update_options() {
     if ($_POST['pageTypes']) { update_option( 'fbmcc_page_types', $_POST['pageTypes']); }
     if ($_POST['pageID']) { update_option( 'fbmcc_pageID', fbmcc_sanitize_page_id($_POST['pageID'])); }
     if ($_POST['locale']) { update_option( 'fbmcc_locale', fbmcc_sanitize_locale($_POST['locale'])); }
+
+    update_option('fbmcc_install_ts', time());
   }
   wp_die();
 }

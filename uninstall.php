@@ -23,4 +23,5 @@ delete_option('fbmcc_pageID');
 delete_option('fbmcc_locale');
 delete_option('fbmcc_generatedCode');
 delete_option('fbmcc_enabled');
+delete_option('fbmcc_install_ts');
 ?>

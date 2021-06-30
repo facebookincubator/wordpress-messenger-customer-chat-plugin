@@ -92,10 +92,10 @@ function fmcc_localize_ajax() {
     plugin_dir_url( __FILE__ ) . 'script.js', '', '2.1' );
 
   if ( current_user_can( 'manage_options' ) ) {
-    $ajax_object = array(
+    wp_localize_script( 'code_script', 'ajax_object', array(
+      'ajaxurl' => admin_url('admin-ajax.php'),
       'nonce' => wp_create_nonce( 'update_fmcc_code' )
-    );
-    wp_localize_script( 'code_script', 'ajax_object', $ajax_object );
+    ));
   }
 
   wp_enqueue_script( 'code_script' );

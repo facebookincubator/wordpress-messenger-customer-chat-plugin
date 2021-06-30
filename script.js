@@ -37,7 +37,7 @@ function fbmcc_setupCustomerChat() {
       };
       jQuery.ajax({
         type: 'POST',
-        url: ajaxurl,
+        url: ajax_object.ajaxurl,
         data: data,
         success: function(results) {
           jQuery('#fbmcc-page-params').css('display', 'inline-block');
@@ -158,7 +158,7 @@ function fbmcc_sanitizeLocale( locale ) {
           }
           jQuery.ajax({
             type: 'POST',
-            url: ajaxurl,
+            url: ajax_object.ajaxurl,
             data: data,
             error: function(results) {
               if (!$('div.fbmcc-deploymentMenu').hasClass("hidden")) {

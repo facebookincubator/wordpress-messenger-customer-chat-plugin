@@ -161,8 +161,10 @@ class Facebook_Messenger_Customer_Chat {
           >
         </div>
         ";
-      _e($genCode);
+    } else {
+      $genCode = "<!-- fbmcc-config-disabled -->\n";
     }
+    _e($genCode);
   }
 
   function fbmcc_i18n() {

@@ -248,32 +248,49 @@ class Facebook_Messenger_Customer_Chat {
       return false;
     }
 
-    $url = 'https://graph.facebook.com/v10.0/fb3p_chat_plugin/';
-    $access_token = '1214154679040756|02b35c7bc067140ef19ebfe0eb3f420e';
+    $last_alert_check_ts = get_option('fbmcc_last_alert_check_ts', 0);
+    $diff_secs = time() - intval($last_alert_check_ts);
+    if ($diff_secs > Time::SECS_IN_HOUR) {
+      update_option('fbmcc_last_alert_check_ts', time());
 
-    $url = $url.'?page_id='.$page_id.'&access_token='.$access_token;
-    $args = array(
-      'headers' => array( "Content-type" => "application/json" ),
-      'timeout' => 5
-    );
+      $url = 'https://graph.facebook.com/v10.0/fb3p_chat_plugin/';
+      $access_token = '1214154679040756|02b35c7bc067140ef19ebfe0eb3f420e';
 
-    $response = wp_remote_get($url, $args);
-    $res_body = wp_remote_retrieve_body($response);
-    $res_json = json_decode($res_body);
+      $url = $url.'?page_id='.$page_id.'&access_token='.$access_token;
+      $args = array(
+        'headers' => array( "Content-type" => "application/json" ),
+        'timeout' => 5
+      );
 
-    if ( is_wp_error( $response ) || $res_json->enabled == false) {
-      return false;
+      $response = wp_remote_get($url, $args);
+      $res_body = wp_remote_retrieve_body($response);
+      $res_json = json_decode($res_body);
+
+      if ( is_wp_error( $response ) || $res_json->enabled == false) {
+        update_option('fbmcc_cached_alert_check_response', 0);
+        return false;
+      }
+      update_option('fbmcc_cached_alert_check_response', $res_json);
+    }
+    else {
+      $response = get_option('fbmcc_cached_alert_check_response');
+      if (!$response) {
+        return false;
+      }
     }
 
     $install_ts = get_option('fbmcc_install_ts');
-    $latest = (new DateTime())->setTimestamp($install_ts);
-    $diff_days = $latest->diff(new DateTime())->d;
-    if ($diff_days < 7) {
+    $diff_secs = time() - intval($install_ts);
+    if ($diff_secs < (7 * Time::SECS_IN_DAY)) {
       return false;
     }
-
     return true;
   }
+}
+
+class Time {
+  const SECS_IN_HOUR = 3600;
+  const SECS_IN_DAY = 86400;
 }
 
 new Facebook_Messenger_Customer_Chat();

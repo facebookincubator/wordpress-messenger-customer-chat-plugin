@@ -24,4 +24,6 @@ delete_option('fbmcc_locale');
 delete_option('fbmcc_generatedCode');
 delete_option('fbmcc_enabled');
 delete_option('fbmcc_install_ts');
+delete_option('fbmcc_last_alert_check_ts');
+delete_option('fbmcc_cached_alert_check_response');
 ?>

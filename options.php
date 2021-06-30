@@ -186,13 +186,16 @@ function fbmcc_integration_settings() {
                       <li>
                         <input type="checkbox" id="cbShowFrontPage" class="fbmcc-displaySetting"
                           <?php echo
-                            ( isset($fbmcc_page_types['front_page'])
-                              && ($fbmcc_page_types['front_page'] == "1") )
-                            ? 'checked' : '';?>/>
+                                (
+                                  ($fbmcc_page_types) &&
+                                    (isset($fbmcc_page_types['front_page'])) &&
+                                    ($fbmcc_page_types['front_page'] == "0")
+                                )
+                            ? '' : 'checked';?>/>
                               Homepage
                       </li>
                       <li>
-                        <input type="checkbox" id="cbShowPosts" class="fbmcc-displaySetting fbmcc-menuParentItem" />
+                        <input type="checkbox" id="cbShowPosts" class="fbmcc-displaySetting fbmcc-menuParentItem" checked />
                         <a
                           href="javascript:;"
                           id="fbmcc-postsSubmenuLink"
@@ -206,32 +209,44 @@ function fbmcc_integration_settings() {
                           <li>
                             <input type="checkbox" id="cbShowSinglePostView" class="fbmcc-displaySetting fbmcc-submenuOption"
                             <?php echo
-                              ( isset($fbmcc_page_types['posts'])
-                                && ($fbmcc_page_types['posts'] == "1") )
-                              ? 'checked' : '';?>/> Single post view
+                                (
+                                  ($fbmcc_page_types) &&
+                                    (isset($fbmcc_page_types['posts'])) &&
+                                    ($fbmcc_page_types['posts'] == "0")
+                                )
+                              ? '' : 'checked';?>/> Single post view
                           </li>
                           <li>
                             <input type="checkbox" id="cbShowCategoryIndex" class="fbmcc-displaySetting fbmcc-submenuOption"
                             <?php echo
-                              ( isset($fbmcc_page_types['category_index'])
-                                && ($fbmcc_page_types['category_index'] == "1") )
-                              ? 'checked' : '';?>/> Category view
+                                (
+                                  ($fbmcc_page_types) &&
+                                    (isset($fbmcc_page_types['category_index'])) &&
+                                    ($fbmcc_page_types['category_index'] == "0")
+                                )
+                                ? '' : 'checked';?>/> Category view
                           </li>
                           <li>
                             <input type="checkbox" id="cbShowTagsIndex" class="fbmcc-displaySetting fbmcc-submenuOption"
                               <?php echo
-                                ( isset($fbmcc_page_types['tag_index'])
-                                  && ($fbmcc_page_types['tag_index'] == "1") )
-                                ? 'checked' : '';?>/> Tags view
+                                (
+                                  ($fbmcc_page_types) &&
+                                    (isset($fbmcc_page_types['tag_index'])) &&
+                                    ($fbmcc_page_types['tag_index'] == "0")
+                                )
+                                ? '' : 'checked';?>/> Tags view
                           </li>
                         </ul>
                       </li>
                       <li>
                         <input type="checkbox" id="cbShowPages" class="fbmcc-displaySetting fbmcc-menuParentItem"
                           <?php echo
-                            ( isset($fbmcc_page_types['pages_all'])
-                              && ($fbmcc_page_types['pages_all'] == "1") )
-                            ? 'checked' : '';?> />
+                            (
+                              ($fbmcc_page_types) &&
+                                (isset($fbmcc_page_types['pages_all'])) &&
+                                ($fbmcc_page_types['pages_all'] == "0")
+                            )
+                            ? '' : 'checked';?> />
                             <?php
                               if (empty($pages_arr)) {
                             ?>Pages<?php
@@ -245,7 +260,22 @@ function fbmcc_integration_settings() {
                           ?>
                           <li>
                             <input type="checkbox" id="pageid_<?php echo $page->ID; ?>" class="fbmcc-displaySetting fbmcc-submenuOption fbmcc-activePageOption"<?php
-                              if(($fbmcc_page_types) && (($fbmcc_page_types['pages_all'] == "1") || (in_array( $page->ID, $active_pages ))) ) {
+                              if (
+                                (!$fbmcc_page_types) ||
+                                (isset($fbmcc_page_types['all']) &&
+                                  ($fbmcc_page_types['all'] == "1") &&
+                                    (!isset($fbmcc_page_types['pages_all'])) &&
+                                    (!isset($fbmcc_page_types['pages']))
+                                ) ||
+                                (
+                                  ($fbmcc_page_types) &&
+                                    (
+                                      ($fbmcc_page_types['pages_all'] == "1") ||
+                                        (isset($fbmcc_page_types['pages']) &&
+                                          (in_array( $page->ID, $fbmcc_page_types['pages'] )))
+                                    )
+                                )
+                              ) {
                                 echo 'checked';
                               }
                             ?>/> <?php echo $page->post_title; ?>
@@ -261,9 +291,12 @@ function fbmcc_integration_settings() {
                       <li>
                         <input type="checkbox" id="cbShowProductPages" class="fbmcc-displaySetting"
                           <?php echo
-                            ( isset($fbmcc_page_types['product_pages'])
-                              && ($fbmcc_page_types['product_pages'] == "1") )
-                              ? 'checked' : '';?>/> WooCommerce
+                            (
+                              ($fbmcc_page_types) &&
+                                (isset($fbmcc_page_types['product_pages'])) &&
+                                ($fbmcc_page_types['product_pages'] == "0")
+                            )
+                            ? '' : 'checked';?>/> WooCommerce
                               <?=esc_html__( 'Product pages', 'facebook-messenger-customer-chat' )?>
                       </li>
                       <?php

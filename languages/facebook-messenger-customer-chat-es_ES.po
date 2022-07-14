@@ -1,205 +1,229 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: The Official Facebook Chat Plugin\n"
+"Project-Id-Version: Facebook Chat Plugin - Live Chat Plugin for WordPress\n"
 "POT-Creation-Date: 2020-11-13 16:39-0800\n"
-"PO-Revision-Date: 2021-05-11 23:56+0800\n"
+"PO-Revision-Date: 2022-06-29 17:01-0700\n"
 "Last-Translator: \n"
 "Language-Team: Facebook\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.2\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 ? 1 : 2);\n"
+"X-Textdomain-Support: yesX-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
 "X-Poedit-Basepath: ..\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-KeywordsList: __;_e;esc_html__\n"
+"X-Generator: Poedit 3.1\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: facebook-messenger-customer-chat.php:3
-msgid "The Official Facebook Chat Plugin"
-msgstr "Plugin de chat oficial de Facebook"
-
-#: facebook-messenger-customer-chat.php:4
-msgid ""
-"With a few clicks, you can add the Facebook Chat Plugin to your website, "
-"enabling customers to message you while browsing your website. To see and "
-"reply to those messages, simply use the same messaging tools you use for "
-"your Facebook messaging, on desktop at facebook.com, Facebook Page Manager "
-"App (available on iOS and Android), or by adding your page account to "
-"Messenger. It's free, easy to install and comes with a user interface your "
-"customers are already familiar with."
-msgstr ""
-"Con tan solo unos clics puedes añadir el plugin de chat de Facebook a tu "
-"sitio web para que los clientes puedan enviarte mensajes mientras navegan "
-"por él. Para ver y responder esos mensajes solo tienes que utilizar las "
-"mismas herramientas de mensajería que usas para tus mensajes de Facebook en "
-"el ordenador en facebook.com, la aplicación Administrador de páginas de "
-"Facebook (disponible en iOS y Android) o al añadir la cuenta de tu página a "
-"Messenger. Es gratis y fácil de instalar e incorpora una interfaz de usuario "
-"con la que tus clientes ya están familiarizados."
-
-#: facebook-messenger-customer-chat.php:53
-#: facebook-messenger-customer-chat.php:70
+#: facebook-messenger-customer-chat.php:106
+#: facebook-messenger-customer-chat.php:136
 msgid "Settings"
 msgstr "Configuración"
 
-#: facebook-messenger-customer-chat.php:77
-msgid "FAQ"
-msgstr "PREGUNTAS FRECUENTES"
+#: facebook-messenger-customer-chat.php:142
+msgid "https://wordpress.org/plugins/facebook-messenger-customer-chat/#faq"
+msgstr ""
 
-#: facebook-messenger-customer-chat.php:83
+#: facebook-messenger-customer-chat.php:143
+msgid "FAQ"
+msgstr "Preguntas frecuentes"
+
+#: facebook-messenger-customer-chat.php:148
 msgid "Support"
 msgstr "Ayuda"
 
-#: facebook-messenger-customer-chat.php:173
+#: facebook-messenger-customer-chat.php:268
 msgid "Cancel"
-msgstr ""
+msgstr "Cancelar"
 
-#: facebook-messenger-customer-chat.php:183
+#: facebook-messenger-customer-chat.php:283
 msgid "We value your feedback."
 msgstr "Valoramos tus comentarios."
 
-#: facebook-messenger-customer-chat.php:188
+#: facebook-messenger-customer-chat.php:287
 msgid "Please let us know why you’re deactivating Facebook Chat Plugin."
 msgstr "Indícanos por qué quieres desactivar el plugin de chat de Facebook."
 
-#: facebook-messenger-customer-chat.php:191
+#: facebook-messenger-customer-chat.php:295
 msgid "I’m unable to get the plugin to work"
 msgstr "No consigo que el plugin funcione"
 
-#: facebook-messenger-customer-chat.php:192
+#: facebook-messenger-customer-chat.php:302
 msgid "I no longer need a live chat feature"
-msgstr ""
+msgstr "Ya no necesito una función de chat en directo"
 
-#: facebook-messenger-customer-chat.php:193
+#: facebook-messenger-customer-chat.php:309
 msgid "I’m using a different live chat plugin"
 msgstr "Uso otro plugin de chat en directo"
 
-#: facebook-messenger-customer-chat.php:198
-msgid "Name of plugin:"
-msgstr "Nombre del plugin:"
-
-#: facebook-messenger-customer-chat.php:199
+#: facebook-messenger-customer-chat.php:316
 msgid "This is a temporary deactivation. I’ll be back!"
-msgstr "Quiero desactivarlo temporalmente. Volveré a activarlo más adelante"
+msgstr "Quiero desactivarlo temporalmente. Volveré a activarlo más adelante!"
 
-#: facebook-messenger-customer-chat.php:200
+#: facebook-messenger-customer-chat.php:323
 msgid "Other"
-msgstr "Otro"
+msgstr "Otro motivo"
 
-#: facebook-messenger-customer-chat.php:205
+#: facebook-messenger-customer-chat.php:330
 msgid "Comments:"
 msgstr "Comentarios:"
 
-#: facebook-messenger-customer-chat.php:208
+#: facebook-messenger-customer-chat.php:338
 msgid "Submit"
 msgstr "Enviar"
 
-#: facebook-messenger-customer-chat.php:214
-msgid "Thank you. We appreciate your feedback."
-msgstr "Gracias por enviarnos tus comentarios."
+#: facebook-messenger-customer-chat.php:346
+msgid "Thank you."
+msgstr "Gracias."
 
-#: options.php:22
-msgid "Plugin Settings"
-msgstr ""
+#: facebook-messenger-customer-chat.php:347
+msgid "We appreciate your feedback."
+msgstr "Gracias por tus comentarios."
 
-#: options.php:23
+#: facebook-messenger-customer-chat.php:372
+#, php-format
+msgid "Facebook Chat Plugin is almost ready to use. Connect your Facebook page %1$shere%2$s to start receiving messages today."
+msgstr "El plugin de chat de Facebook ya casi está listo para usarse. Vincula tu página de Facebook %1$saquí%2$s para empezar a recibir mensajes hoy mismo."
+
+#: facebook-messenger-customer-chat.php:424
+msgid "How is the Facebook Chat plugin working out for you and your visitors?"
+msgstr "¿Cómo valorarías la utilidad del plugin de chat de Facebook para ti y tus visitantes?"
+
+#: facebook-messenger-customer-chat.php:426
+msgid "We'd love to hear your feedback!"
+msgstr "¡Nos gustaría conocer tu opinión!"
+
+#: facebook-messenger-customer-chat.php:428
+msgid "Please leave us a review."
+msgstr "Envíanos tus comentarios."
+
+#: options.php:51
+msgid "Plugin settings"
+msgstr "Configuración del plugin"
+
+#: options.php:52
 msgid "Facebook Chat"
-msgstr ""
+msgstr "Chat de Facebook"
 
-#: options.php:106
+#: options.php:196
 msgid "Facebook Chat Plugin Settings"
 msgstr "Configuración del plugin de chat de Facebook"
 
-#: options.php:110
+#: options.php:203
 msgid "Getting Started?"
-msgstr "¿Estas empezando?"
+msgstr "¿Es la primera vez que lo usas?"
 
-#: options.php:111
+#: options.php:209
 msgid ""
-"Let people start a conversation on your website and continue in Messenger. "
-"It's easy to set up. Chats started on your website can be continued in the "
-"customers' Messenger app, so you never lose connections with your customers. "
-"Even those without a Facebook Messenger account can chat with you in guest "
-"mode, so you can reach more customers than ever."
-msgstr ""
-"Permite que las personas inicien una conversación en tu sitio web y "
-"continúen en Messenger. Es fácil de configurar. Los chats iniciados en tu "
-"sitio web pueden continuar en la aplicación de Messenger de los clientes, "
-"para que nunca pierdas la conexión con ellos. Incluso aquellos que no tienen "
-"una cuenta de Facebook Messenger pueden chatear contigo en el modo de "
-"invitado, para que puedas llegar a más clientes que nunca."
+"Let people start a conversation on\n"
+"\t\t\t\t\t\t\tyour website and continue in Messenger. It's easy to set up. Chats\n"
+"\t\t\t\t\t\t\tstarted on your website can be continued in the customers'\n"
+"\t\t\t\t\t\t\tMessenger app, so you never lose connections with your customers.\n"
+"\t\t\t\t\t\t\tEven those without a Facebook Messenger account can chat with you\n"
+"\t\t\t\t\t\t\tin guest mode, so you can reach more customers than ever."
+msgstr "Permite que las personas inicien una conversación en tu sitio web y continúen en Messenger. Es fácil de configurar. Los chats que se inician en tu sitio web se pueden continuar en la aplicación de Messenger de los clientes, por lo que no perderás los contactos que establezcas. Además, incluso puedes chatear con personas que no tienen cuenta de Facebook Messenger gracias al modo invitado."
 
-#: options.php:128
+#: options.php:225
 msgid "Setup Chat Plugin"
 msgstr "Configurar el plugin de chat"
 
-#: options.php:130
-msgid "Edit Chat Plugin"
-msgstr "Editar el plugin de chat"
+#: options.php:227
+msgid "Edit Chat Plugin Configuration"
+msgstr "Editar la configuración del plugin de chat"
 
-#: options.php:144
+#: options.php:243
+msgid "Edit Availability and Automated Responses"
+msgstr ""
+
+#: options.php:254
 msgid "Setup status"
-msgstr ""
+msgstr "Definir el estado"
 
-#: options.php:145
+#: options.php:260
 msgid ""
-"The plugin code has already been added into your website. You can always go "
-"back through the setup process to customize the plugin."
-msgstr ""
-"El código del plugin ya se ha añadido a tu sitio web. Siempre puedes "
-"retroceder durante el proceso de configuración para personalizar el plugin."
+"The plugin code has already been added.\n"
+"\t\t\t\t\t\tinto your website. You can always go back through the setup process\n"
+"\t\t\t\t\t\tto customize the plugin."
+msgstr "El código del plugin ya se ha añadido a tu sitio web. Siempre puedes retroceder durante el proceso de configuración para personalizar el plugin."
 
-#: options.php:149
+#: options.php:269
 msgid "Advanced Configuration"
 msgstr "Configuración avanzada"
 
-#: options.php:159
+#: options.php:277
 msgid "Deploy Chat plugin on:"
-msgstr "Instalar plugin de chat en…"
-msgstr ""
-#: options.php:164
-msgid "All pages"
-msgstr "Todas las páginas"
-
-#: options.php:168
-msgid "Custom pages"
-msgstr "Páginas personalizadas"
-
-#: options.php:260
-msgid "Product pages"
-msgstr "Páginas de producto"
-
-#: options.php:268
-msgid "Error saving settings."
-msgstr ""
-
-#: options.php:270
-msgid "Settings saved."
-msgstr ""
-
-#: options.php:272
-msgid "Saving settings..."
-msgstr ""
+msgstr "Instalar el plugin de chat en:"
 
 #: options.php:285
-msgid "Use of this plugin is subject to Facebook's Platform Terms"
-msgstr ""
-"El uso de este plugin está sujeto a las condiciones de la plataforma de "
-"Facebook"
-
-#: options.php:287
-msgid "Having a problem setting up or using the Chat Plugin?"
-msgstr "¿Tienes problemas al configurar o usar el plugin de chat?"
+msgid "All WordPress pages"
+msgstr "Todas las páginas de WordPress"
 
 #: options.php:291
+msgid "Custom WordPress pages"
+msgstr "Páginas personalizadas de WordPress"
+
+#: options.php:310
+msgid "Homepage"
+msgstr "Página de inicio"
+
+#: options.php:316 options.php:328
+msgid "Posts"
+msgstr "Publicaciones"
+
+#: options.php:326 options.php:389
+msgid "Click for granular options"
+msgstr "Haz clic para ver opciones detalladas"
+
+#: options.php:341
+msgid "Single post view"
+msgstr "Vista de una sola publicación"
+
+#: options.php:353
+msgid "Category view"
+msgstr "Vista de categoría"
+
+#: options.php:365
+msgid "Tags view"
+msgstr "Vista de etiquetas"
+
+#: options.php:373 options.php:393
+msgid "Pages"
+msgstr "Páginas"
+
+#: options.php:438
+msgid "WooCommerce Product pages"
+msgstr "Páginas de productos de WooCommerce"
+
+#: options.php:447
+msgid "Error saving settings."
+msgstr "Error al guardar la configuración."
+
+#: options.php:451
+msgid "Settings saved."
+msgstr "Configuración guardada."
+
+#: options.php:455
+msgid "Saving settings..."
+msgstr "Guardando configuración…"
+
+#: options.php:469
+msgid "https://developers.facebook.com/terms/"
+msgstr "https://developers.facebook.com/terms/"
+
+#: options.php:470
+msgid "Use of this plugin is subject to Facebook's Platform Terms"
+msgstr "El uso de este plugin está sujeto a las condiciones de la plataforma de Facebook"
+
+#: options.php:475
+msgid "Having a problem setting up or using the Chat Plugin?"
+msgstr "¿Tienes problemas para configurar o usar el plugin de chat?"
+
+#: options.php:481
 msgid "Please consult our Troubleshooting Guide."
 msgstr "Consulta nuestra guía de solución de problemas."
 
-#: options.php:294
-msgid ""
-"If the troubleshooting steps in the guide do not solve your problem, please "
-"post in the plugin support forum."
-msgstr ""
-"Si los pasos de solución de problemas de la guía no resuelven el problema,"
-"publícalo en el foro de ayuda del plugin."
+#: options.php:487
+msgid "If the troubleshooting steps in the guide do not solve your problem, please post in the plugin support forum."
+msgstr "Si las indicaciones de solución de problemas de la guía no resuelven el problema, publícalo en el foro de ayuda del pluguin."

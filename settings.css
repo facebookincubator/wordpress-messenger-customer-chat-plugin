@@ -216,7 +216,7 @@ a.fbmcc-menuParentLink {
 
 .fbmcc-deactivationReason-commentContainer {
     display: none;
-    margin: 4px 0 0 25px;
+    margin: 4px 0 0 0;
     font-size: 11pt;
 }
 

@@ -1,10 +1,14 @@
-(function ($) {
+/**
+ * Fork of the dismissible notices library script. This version is identical, but
+ * it does not use event.preventDefault(), so that links with the
+ * `.dismiss-this` class can be followed while still dismissing the notice.
+ */
+(function($) {
 	//shorthand for ready event.
 	$(
 		function () {
 			$( 'div[data-dismissible] button.notice-dismiss, div[data-dismissible] .dismiss-this' ).on("click",
-				function (event) {
-					event.preventDefault();
+				function () {
 					var $this = $( this );
 
 					var attr_value, option_name, dismissible_length, data;

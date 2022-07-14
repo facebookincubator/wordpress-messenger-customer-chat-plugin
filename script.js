@@ -184,12 +184,6 @@ function fbmcc_sanitizeLocale( locale ) {
 			$( '#fbmcc-deactivationFormSubmit' ).click(
         function () {
           $('#fbmcc-deactivationFormSubmit').attr('disabled','disabled');
-          var reason = "";
-          if ($('input[name=fbmcc-deactivationReason]:checked', '#fbmcc-deactivationForm').val() == 3) {
-            reason = $('#fbmcc-deactivationReason-preferredPluginName').val();
-          } else if ($('input[name=fbmcc-deactivationReason]:checked', '#fbmcc-deactivationForm').val() == 5) {
-            reason = $('#fbmcc-deactivationReason-other').val();
-          }
           $.ajax(
             {
               method: 'POST',
@@ -197,7 +191,7 @@ function fbmcc_sanitizeLocale( locale ) {
               data: $.param(
                 {
                   page_id: $('#fbmcc-deactivationForm-pageId').val(),
-                  reason: reason,
+                  reason: $('#fbmcc-deactivationReason').val(),
                   selected_option: $('input[name=fbmcc-deactivationReason]:checked', '#fbmcc-deactivationForm').val()
                 }
               ),
@@ -241,11 +235,9 @@ function fbmcc_sanitizeLocale( locale ) {
 			);
     },
 		deactivationModalFreetextOptionOpenHandler: function() {
-			$("#fbmcc-deactivationModal ul li input[name='fbmcc-deactivationReason']").click(
+			$("#fbmcc-deactivationModal ul li input").click(
 				function () {
-          $('div.fbmcc-deactivationReason-commentContainer').removeClass( 'fbmcc-display' );
-          $( '#fbmcc-deactivationReason-commentContainer'
-            + $('input[name=fbmcc-deactivationReason]:checked', '#fbmcc-deactivationForm').val() ).toggleClass( 'fbmcc-display' );
+          $('div.fbmcc-deactivationReason-commentContainer').addClass( 'fbmcc-display' );
 				}
 			)
     },

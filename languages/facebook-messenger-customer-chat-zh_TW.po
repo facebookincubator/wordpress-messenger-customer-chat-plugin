@@ -1,196 +1,231 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: The Official Facebook Chat Plugin\n"
+"Project-Id-Version: Facebook Chat Plugin - Live Chat Plugin for WordPress\n"
 "POT-Creation-Date: 2020-11-13 16:39-0800\n"
-"PO-Revision-Date: 2021-05-12 00:04+0800\n"
+"PO-Revision-Date: 2022-06-29 17:00-0700\n"
 "Last-Translator: \n"
 "Language-Team: Facebook\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.2\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 ? 1 : 2);\n"
+"X-Textdomain-Support: yesX-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;"
+"_nx_noop:4c,1,2;_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
 "X-Poedit-Basepath: ..\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-KeywordsList: __;_e;esc_html__\n"
+"X-Generator: Poedit 3.1\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: facebook-messenger-customer-chat.php:3
-msgid "The Official Facebook Chat Plugin"
-msgstr "官方版 Facebook 洽談外掛程式"
-
-#: facebook-messenger-customer-chat.php:4
-msgid ""
-"With a few clicks, you can add the Facebook Chat Plugin to your website, "
-"enabling customers to message you while browsing your website. To see and "
-"reply to those messages, simply use the same messaging tools you use for "
-"your Facebook messaging, on desktop at facebook.com, Facebook Page Manager "
-"App (available on iOS and Android), or by adding your page account to "
-"Messenger. It's free, easy to install and comes with a user interface your "
-"customers are already familiar with."
-msgstr ""
-"只需點擊幾下， 您就能將 Facebook 洽談外掛程式加到您的網站， 讓瀏覽網站的顧客"
-"可以立即向您發送訊息。若要查看及回覆這些訊息， 只需使用您在 Facebook 桌面版"
-"（facebook.com）收發訊息時所用的 訊息工具、 Facebook 專頁小助手應用程式（iOS "
-"版和 Android 版）， 或者將您的粉絲專頁帳號加到 Messenger 也可以。此工具完全免"
-"費 且安裝簡單，用戶介面對顧客來說既熟悉又好上手。"
-
-#: facebook-messenger-customer-chat.php:53
-#: facebook-messenger-customer-chat.php:70
+#: facebook-messenger-customer-chat.php:106 facebook-messenger-customer-chat.php:136
 msgid "Settings"
-msgstr "設定"
+msgstr "設"
 
-#: facebook-messenger-customer-chat.php:77
+#: facebook-messenger-customer-chat.php:142
+msgid "https://wordpress.org/plugins/facebook-messenger-customer-chat/#faq"
+msgstr ""
+
+#: facebook-messenger-customer-chat.php:143
 msgid "FAQ"
-msgstr "常見問題"
+msgstr "常見問"
 
-#: facebook-messenger-customer-chat.php:83
+#: facebook-messenger-customer-chat.php:148
 msgid "Support"
-msgstr "支援服務"
+msgstr "支援服"
 
-#: facebook-messenger-customer-chat.php:173
+#: facebook-messenger-customer-chat.php:268
 msgid "Cancel"
-msgstr ""
+msgstr "取"
 
-#: facebook-messenger-customer-chat.php:183
+#: facebook-messenger-customer-chat.php:283
 msgid "We value your feedback."
-msgstr "我們非常重視您的意見回饋。"
+msgstr "我們非常重視您的意見回饋"
 
-#: facebook-messenger-customer-chat.php:188
+#: facebook-messenger-customer-chat.php:287
 msgid "Please let us know why you’re deactivating Facebook Chat Plugin."
-msgstr "請告訴我們您要停用 Facebook 洽談外掛程式的原因。"
+msgstr "請告訴我們您要停用 Facebook 洽談外掛程式的原因"
 
-#: facebook-messenger-customer-chat.php:191
+#: facebook-messenger-customer-chat.php:295
 msgid "I’m unable to get the plugin to work"
-msgstr "我的外掛程式無法正常運作"
+msgstr "我的外掛程式無法正常運"
 
-#: facebook-messenger-customer-chat.php:192
+#: facebook-messenger-customer-chat.php:302
 msgid "I no longer need a live chat feature"
-msgstr ""
+msgstr "我不再需要即時聊天功"
 
-#: facebook-messenger-customer-chat.php:193
+#: facebook-messenger-customer-chat.php:309
 msgid "I’m using a different live chat plugin"
-msgstr "我目前在用其他即時聊天外掛程式"
+msgstr "我目前在用其他即時聊天外掛程"
 
-#: facebook-messenger-customer-chat.php:198
-msgid "Name of plugin:"
-msgstr "外掛程式名稱："
-
-#: facebook-messenger-customer-chat.php:199
+#: facebook-messenger-customer-chat.php:316
 msgid "This is a temporary deactivation. I’ll be back!"
-msgstr "現在只是暫時停用，以後還會繼續使用！"
+msgstr "現在只是暫時停用，以後還會繼續使用"
 
-#: facebook-messenger-customer-chat.php:200
+#: facebook-messenger-customer-chat.php:323
 msgid "Other"
-msgstr "其他"
+msgstr "其"
 
-#: facebook-messenger-customer-chat.php:205
+#: facebook-messenger-customer-chat.php:330
 msgid "Comments:"
-msgstr "留言："
+msgstr "留言"
 
-#: facebook-messenger-customer-chat.php:208
+#: facebook-messenger-customer-chat.php:338
 msgid "Submit"
-msgstr "提交"
+msgstr "提"
 
-#: facebook-messenger-customer-chat.php:214
-msgid "Thank you. We appreciate your feedback."
-msgstr "感謝您！我們非常感謝您提供寶貴意見。"
+#: facebook-messenger-customer-chat.php:346
+msgid "Thank you."
+msgstr "謝謝"
 
-#: options.php:22
-msgid "Plugin Settings"
-msgstr ""
+#: facebook-messenger-customer-chat.php:347
+msgid "We appreciate your feedback."
+msgstr "謝謝您的意見回饋"
 
-#: options.php:23
+#: facebook-messenger-customer-chat.php:372
+#, php-format
+msgid "Facebook Chat Plugin is almost ready to use. Connect your Facebook page %1$shere%2$s to start receiving messages today."
+msgstr "Facebook 洽談外掛程式即將準備就緒。%1$s在此%2$s連結您的 Facebook 粉絲專頁，立即開始接收訊息"
+
+#: facebook-messenger-customer-chat.php:424
+msgid "How is the Facebook Chat plugin working out for you and your visitors?"
+msgstr "您和您的訪客對於使用 Facebook 洽談外掛程式有何意見"
+
+#: facebook-messenger-customer-chat.php:426
+msgid "We'd love to hear your feedback!"
+msgstr "我們很希望能聽取您的寶貴意見"
+
+#: facebook-messenger-customer-chat.php:428
+msgid "Please leave us a review."
+msgstr "請告訴我們您的想"
+
+#: options.php:51
+msgid "Plugin settings"
+msgstr "外掛程式設"
+
+#: options.php:52
 msgid "Facebook Chat"
-msgstr ""
+msgstr "Facebook 洽"
 
-#: options.php:106
+#: options.php:196
 msgid "Facebook Chat Plugin Settings"
-msgstr "Facebook 洽談外掛程式設定"
+msgstr "Facebook 洽談外掛程式設"
 
-#: options.php:110
+#: options.php:203
 msgid "Getting Started?"
-msgstr "剛開始使用？"
+msgstr "新手上路"
 
-#: options.php:111
+#: options.php:209
 msgid ""
-"Let people start a conversation on your website and continue in Messenger. "
-"It's easy to set up. Chats started on your website can be continued in the "
-"customers' Messenger app, so you never lose connections with your customers. "
-"Even those without a Facebook Messenger account can chat with you in guest "
-"mode, so you can reach more customers than ever."
+"Let people start a conversation on\n"
+"\t\t\t\t\t\t\tyour website and continue in Messenger. It's easy to set up. Chats\n"
+"\t\t\t\t\t\t\tstarted on your website can be continued in the customers'\n"
+"\t\t\t\t\t\t\tMessenger app, so you never lose connections with your customers.\n"
+"\t\t\t\t\t\t\tEven those without a Facebook Messenger account can chat with you\n"
+"\t\t\t\t\t\t\tin guest mode, so you can reach more customers than ever."
 msgstr ""
-"透過 Messenger 讓用戶在您的網站展開洽談並保持聯繫；設定這項功能毫不費力。顧客"
-"在您的網站展開洽談後，您可透過對方的 Messenger 應用程式延續這段對話，藉此與顧"
-"客長久保持聯繫。沒有 Facebook Messenger 帳號的顧客則可使用訪客模式與您聊天，"
-"因此您的觸及人數會比以往還多。"
+"透過 Messenger 讓用戶在您的網站展開洽談並保持聯繫；設定方法簡單又方便。在您網站上展開的對話可延續到顧客的 Messenger 應用程"
+"式，讓您永遠不會與顧客失去聯繫。顧客即使沒有 Facebook Messenger 帳號，也可透過訪客模式和您對話"
 
-#: options.php:128
+#: options.php:225
 msgid "Setup Chat Plugin"
-msgstr "設定洽談外掛程式"
+msgstr "設定洽談外掛程"
 
-#: options.php:130
-msgid "Edit Chat Plugin"
-msgstr "編輯洽談外掛程式"
+#: options.php:227
+msgid "Edit Chat Plugin Configuration"
+msgstr "編輯洽談外掛程式設"
 
-#: options.php:144
+#: options.php:243
+msgid "Edit Availability and Automated Responses"
+msgstr ""
+
+#: options.php:254
 msgid "Setup status"
-msgstr ""
-
-#: options.php:145
-msgid ""
-"The plugin code has already been added into your website. You can always go "
-"back through the setup process to customize the plugin."
-msgstr "外掛程式已加到您的網站。您隨時可以返回設定程序自訂外掛程式。"
-
-#: options.php:149
-msgid "Advanced Configuration"
-msgstr "進階設定"
-
-#: options.php:159
-msgid "Deploy Chat plugin on:"
-msgstr "部署洽談外掛程式……"
-msgstr ""
-#: options.php:164
-msgid "All pages"
-msgstr "所有粉絲專頁"
-
-#: options.php:168
-msgid "Custom pages"
-msgstr "自訂頁面"
+msgstr "設定狀"
 
 #: options.php:260
-msgid "Product pages"
-msgstr "商品頁面"
+msgid ""
+"The plugin code has already been added.\n"
+"\t\t\t\t\t\tinto your website. You can always go back through the setup process\n"
+"\t\t\t\t\t\tto customize the plugin."
+msgstr "外掛程式已加到您的網站。您隨時可以返回設定程序自訂外掛程式"
 
-#: options.php:268
-msgid "Error saving settings."
-msgstr ""
+#: options.php:269
+msgid "Advanced Configuration"
+msgstr "Facebook 洽談外掛程"
 
-#: options.php:270
-msgid "Settings saved."
-msgstr ""
-
-#: options.php:272
-msgid "Saving settings..."
-msgstr ""
+#: options.php:277
+msgid "Deploy Chat plugin on:"
+msgstr "部署洽談外掛程式"
 
 #: options.php:285
-msgid "Use of this plugin is subject to Facebook's Platform Terms"
-msgstr "使用此外掛程式須遵守《Facebook 開放平台使用條款》的規定"
-
-#: options.php:287
-msgid "Having a problem setting up or using the Chat Plugin?"
-msgstr "設定或使用洽談外掛程式時遇到問題嗎？"
+msgid "All WordPress pages"
+msgstr "所有 WordPress 頁"
 
 #: options.php:291
-msgid "Please consult our Troubleshooting Guide."
-msgstr "請查閱我們的疑難排解指南。"
+msgid "Custom WordPress pages"
+msgstr "自訂 WordPress 頁"
 
-#: options.php:294
-msgid ""
-"If the troubleshooting steps in the guide do not solve your problem, please "
-"post in the plugin support forum."
+#: options.php:310
+msgid "Homepage"
+msgstr "首"
+
+#: options.php:316 options.php:328
+msgid "Posts"
+msgstr "貼"
+
+#: options.php:326 options.php:389
+msgid "Click for granular options"
+msgstr "點擊以使用詳細選"
+
+#: options.php:341
+msgid "Single post view"
+msgstr "單一貼文檢"
+
+#: options.php:353
+msgid "Category view"
+msgstr "類別檢"
+
+#: options.php:365
+msgid "Tags view"
+msgstr "標籤檢"
+
+#: options.php:373 options.php:393
+msgid "Pages"
+msgstr "頁"
+
+#: options.php:438
+msgid "WooCommerce Product pages"
+msgstr "WooCommerce 商品頁"
+
+#: options.php:447
+msgid "Error saving settings."
+msgstr "儲存設定時發生錯誤"
+
+#: options.php:451
+msgid "Settings saved."
+msgstr "已儲存設定"
+
+#: options.php:455
+msgid "Saving settings..."
+msgstr "正在儲存設定"
+
+#: options.php:469
+msgid "https://developers.facebook.com/terms/"
 msgstr ""
-"若按照指南所列的疑難排解步驟操作後，問題仍未解決，請 將問題發佈到外掛程式支援"
-"論壇。"
+
+#: options.php:470
+msgid "Use of this plugin is subject to Facebook's Platform Terms"
+msgstr "使用此外掛程式須遵守《Facebook 開放平台使用條款》的規"
+
+#: options.php:475
+msgid "Having a problem setting up or using the Chat Plugin?"
+msgstr "設定或使用洽談外掛程式時遇到問題嗎"
+
+#: options.php:481
+msgid "Please consult our Troubleshooting Guide."
+msgstr "請查閱我們的疑難排解指南"
+
+#: options.php:487
+msgid "If the troubleshooting steps in the guide do not solve your problem, please post in the plugin support forum."
+msgstr "若按照指南所列的疑難排解步驟操作後，問題仍未解決，請將問題發佈到外掛程式支援論壇"

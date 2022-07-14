@@ -1,59 +1,63 @@
-=== The Official Facebook Chat Plugin ===
+=== Facebook Chat Plugin - Live Chat Plugin for WordPress ===
 Contributors: facebook
 Tags: Facebook, Messenger, Customer Care, Chat, Messaging, Chat Plugin
 Requires at least: 3.9
-Tested up to: 5.7.1
-Stable tag: 2.1
+Tested up to: 5.9
+Stable tag: 2.5
 Requires PHP: 5.2.4
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-The Official Facebook Chat Plugin
+The Facebook Chat Plugin makes it easy for your website visitors to chat with you and ask you questions, even if they don't have Messenger.
 
 == Description ==
-The Facebook Chat Plugin is a free and easy to use tool to connect with customers on your website. With a few clicks, you can add the plugin to your website, enabling customers to message you while browsing your website. Chats started on your website can be continued in the customers' Messenger app, so you never lose connections with your customers. Even those without a Facebook Messenger account can chat with you in guest mode, so you can reach more customers than ever.
+Communicate with customers on your website with Messenger-powered chat. Chat Plugin is a chat widget maintained by the Meta Business that enables live chat on your website.
 
-"Having an open line of communication with our customers gives them a sense of confidence from the browsing stage to final checkout," said Ryan Pamplin, CEO of BlendJet. "We noticed that customers who engage with us are three to four times more likely to checkout. With the Chat Plugin allowing us to reach more customers, we've tripled our sales since offering it as a customer engagement channel."
+Whether they’re on their computer or their phone, website visitors will be able to message you anytime by clicking on a small Messenger chat bubble in the lower right corner of your site.
 
-Key features of the Chat Plugin:
+Key features:
 
-- No disconnection: Using the plugin creates a long-lived thread between you and your customers in Messenger. Customers can start a chat on your website and carry on in their mobile device with the Messenger app.
-- Chat transcripts are automatically created in the customer's Messenger account
-- The familiar, modern interface of Messenger builds trust and encourages your customers to engage with you
-- You can use the same Inboxes on desktop and mobile that you use to manage your Facebook page messaging
-- You can set up hours of availability, auto replies and FAQ to serve customers when you're not available
-
+- Website visitors can message you while browsing your site.
+- Set up auto-replies and answers to common questions to serve customers when you’re not available.
+- Continue the conversation with customers on Messenger even after they leave your website.
+- Visitors without a Facebook Messenger account can ask you questions anonymously in Guest mode.
+- [Messenger](https://www.facebook.com/business/messenger/get-started)’s familiar interface builds trust.
+- No need to switch between apps to answer questions you get on the website.
 
 == Installation ==
 
 = Pre-requisites =
 __Requires WordPress Version:__ 3.9 or higher
-<br />
-
 __Requires PHP Version:__ 5.2.4 or higher
-<br />
+__Facebook Page__
 
-__Facebook Presence__ <br />
-In order to use the Chat Plugin, you will need to have a published Facebook Page. You can find a list of your Facebook Pages by following this [link](https://www.facebook.com/bookmarks/pages).  If you do not have a Facebook Page, you can create one for free [here](https://www.facebook.com/pages/creation/?ref_type=pages_you_admin).
-Once you have your Facebook Page ready, you will be asked to login to Facebook on the computer or device you are using to install the plugin. You can then follow the directions below.
+In order to use the Chat Plugin, you will need to have a published Facebook Page. If you do not have a Facebook Page, you can create one for free [here](https://www.facebook.com/pages/creation/?ref_type=pages_you_admin).
+
+Once you have your Facebook Page ready, you will be asked to login to Facebook. You can then follow the directions below.
 
 = Installing =
-To install the Chat Plugin: <br />
-1. Log in to your WordPress dashboard, navigate to the Plugins menu and click Add New. <br />
-2. In the search field, type 'Facebook Chat Plugin' and click 'Search Plugins'. Select the plugin authored by 'Facebook'. You can install it by simply clicking 'Install Now'.
+To install the Chat Plugin:
 
-= Updating =
-Following the [Facebook platform and versioning](https://developers.facebook.com/docs/apps/versions), all versions will be supported for 2 years from launch. Updating should be safe and easy.
+1. Log in to your WordPress dashboard, navigate to the Plugins menu and click Add New.
+2. In the search field, type 'Facebook Chat Plugin' and click 'Search Plugins'. Select the plugin authored by 'Meta'. You can install it by clicking 'Install Now'.
 
 = Configure plugin for first use =
 After navigating to the Chat Plugin settings page, click on 'Setup Customer Chat.' A new window will appear for setting up the plugin and you will be asked to select the Facebook Page you want to use. Next, you will go through the plugin setup with the following steps:
-1. You will be asked to select the language and you can customize the greeting message. The default greeting is "Hi! How can we help you?"
-2. The next screen allows you to select your response time and chat color. By setting the response time, you can set expectations with your customers on when they will receive a response
-3. Next, click on 'Finish' to save these settings and click 'Done' to close this window. The Messenger customer chat plugin should now be installed.
-4. You can rerun the setup by clicking 'Edit Customer Chat'. To remove the plugin, you can deactivate the plugin/uninstall it.
 
-<br />
-That's it! You're all set. Now all visitors to your WordPress website will see the Messenger customer chat plugin and can message you.
+1. After installing the plugin, navigate to **Settings** in your WordPress dashboard menu and click **Facebook Chat**.
+2. This will open the Chat Plugin settings page. Click **Setup Chat Plugin**.
+3. A new window will appear and you will be asked to **select the Facebook Page you want to use**.
+4. You can now **customize** the welcome message, color, and language of the chat, as well as provide answers to frequently asked questions.
+5. On the right side of the screen, you can preview what desktop and mobile visitors will see. Once you’re pleased, click **Publish**.
+
+That's it! You're all set. Customers can now message you from your website, and you can access their messages in your Business Page Inbox.
+
+To rerun the setup, go to your WordPress dashboard and click **Facebook Chat**. This will open the Chat Plugin settings page. Click **Edit Chat Plugin Configuration**.
+
+To remove the plugin, you can deactivate the plugin or uninstall it.
+
+= Updating =
+Following the [Facebook platform and versioning](https://developers.facebook.com/docs/apps/versions), all versions will be supported for 2 years from launch. Updating should be safe and easy.
 
 = Support =
 If you get stuck, or have any questions, you can ask for help in the [Messenger Platform Developer Community](https://www.facebook.com/groups/messengerplatform).
@@ -68,26 +72,80 @@ If you get stuck, or have any questions, you can ask for help in the [Messenger 
 
 == Frequently Asked Questions ==
 
-= What do I need before setting up the Chat Plugin on my website? =
-You will need to have a published Facebook Page and be logged into Facebook on your computer or device.
+= What do I need to set up the Chat Plugin on my website? =
+You will need to be an administrator of a Facebook Page and be logged into Facebook.
 
-= How does the plugin work? =
-The plugin is a snippet of JavaScript code that runs on your WordPress website. There will be a small Messenger chat bubble that loads with your website in the lower right corner. Your customers can click on it at anytime and message you. It works on both mobile and desktop.
+If you don’t have one, you can create a [business Page in minutes](https://www.facebook.com/business/pages/set-up#).
 
-= Where can I see all my messages? =
-On the desktop, you can see all messages in your Page Inbox. Navigate to your Facebook Page on Facebook and click on 'Inbox' at the top. On mobile, you can download the Facebook Pages Manager app and navigate to Inbox. You can also link your Page account to your Messenger app and access all your messages there.
+= Will website visitors need a Facebook account to contact me? =
+No, they can message you as a guest user.
 
-= What permissions do I need on a Page to enable the Messenger customer chat feature? =
-You need be an administrator of the Page.
+If people are logged in to their Facebook accounts, the conversations will be saved in Messenger and they’ll be able to continue the conversation even after leaving your website.
 
-= Can I see messaging analytics for my Facebook page? =
-On the desktop, go to your Facebook page, and click on Insights on the Navigation bar. On the left hand side, click on Messaging to see your messaging analytics.
+= What will website visitors see when I’m not online? =
+Serve customers when you’re not available by setting up auto-replies and answers to common questions.
 
-= Where can I find support? =
-Please refer to our [troubleshooting guide](https://www.facebook.com/business/help/789975831794468) for the most common issues and how to resolve them.
-If you get stuck, or have any questions, you can ask for help in the [Messenger Platform Developer Community](https://www.facebook.com/groups/messengerplatform). If you would like to file a bug, please use the Facebook Bug tool found [here](https://developers.facebook.com/support/bugs/).
+We recommend setting response times so customers can know when they will receive a response.
+
+For auto-replies, you can thank customers for reaching out, provide average response times, and include relevant links.
+
+Common questions can include inquiries around return policies, ingredients, locations, memberships, etc.
+
+= Can I chat to multiple customers at the same time? =
+Yes, all messages will be shown in your Business Page Inbox.
+
+= I don’t want the chat window to show up on every page. Can I choose where it displays? =
+1. Once you’ve set up the plugin, click **Facebook Chat** in your WordPress admin dashboard.
+2. You should see a tab that says **Setup status**, where you can select to display the chat window on custom pages.
+3. Select the pages or posts where you want to display the chat window.
+
+= Can I change the appearance of the chat window? =
+Yes! You can customize the color, greeting message, button display, alignment, etc. You can also set your desired language and turn guest mode on or off.
+
+Most customizations (theme color, greeting, language, guest mode, alignment and automatically expand) can be set directly via the plugin setup tool: Facebook page settings --> Messaging --> Add Messenger to your website --> Get Started.
+
+You can customize other features via [Customization API](https://developers.facebook.com/docs/messenger-platform/discovery/facebook-chat-plugin#customization).
+
+= How can I set automatic replies? =
+You can set up to 3 automatic replies by customizing the Chat Plugin settings in your Facebook page inbox. Open your Facebook Page -> Open Manage Page panel on the left -> Meta Business Suite -> Inbox -> Chat Plugin -> Start the conversation -> Frequently asked questions
+Please note that the “Automated Responses” feature in Inbox only applies to conversations started on your Facebook Page and does not work on the Chat Plugin.
+
+= I have installed the Facebook Chat Plugin on my website but it doesnt show. What can I do? =
+If you are having trouble loading Chat Plugin, you can use the [Diagnostic Tool](https://developers.facebook.com/tools/chatplugin/diagnostictool/) to check for errors.
+
+= How can I grow my business through live chat? =
+Live chat lets you answer questions about price or delivery in the moment, provide personalized assistance so you can help customers buy with confidence, and build stronger relationships.
+
+By using the Facebook Chat Plugin, ROYBI, the educational robot maker, [improved customer service response times and saw a 50% increase in leads](https://www.facebook.com/business/success/roybi#).
+
+You can also check out our other [case studies](https://www.facebook.com/business/success/categories/messenger#) to see how businesses similar to yours are growing with Facebook marketing.
 
 == Changelog ==
+= 2.5 - Jul 5, 2022 =
+* Added an admin notice for any service outages or important status updates.
+* Added a link to configure availability and automated responses in Meta Business Suite.
+
+= 2.4 - Mar 28, 2022 =
+* Changed the prompt for plugin reviews to only appear on fewer screens and only display if the plugin is in active use.
+
+= 2.3 - Mar 2, 2022 =
+* Tested up to WordPress 5.9.
+* Added a dismissible notice to configure the plugin when activated.
+* Added a filter, `fbmcc_options_capability` to support changing the capability required to manage plugin settings.
+* Added a filter, `fbmcc_should_display` to support more control over where the chat plugin appears.
+* Moved the admin menu item for the plugin's settings into the Settings menu.
+* Updated the plugin's PHP code to adhere to the WordPress coding standards.
+* Updated the main plugin class to use the Singleton pattern.
+* Adjusted some wording in the plugin to improve clarity.
+* Fixed an issue where multiple chat windows might appear.
+
+= 2.2 - Jun 30, 2021 =
+* Tested up to WordPress 5.7.2
+* Product rename! (“Facebook Chat Plugin")
+* Fixed PHP8 issues
+* Fixed issue with initialisation of ajax_object (Github issue #10)
+* Improvements and fixes to the Advanced Configuration page deployment selector
+* Added review prompt card to solicit feedback from users
 
 = 2.1 - May 1, 2021 =
 * Tested up to WordPress 5.7.1
@@ -136,6 +194,9 @@ If you get stuck, or have any questions, you can ask for help in the [Messenger 
 * Plugin released for all users
 
 == Upgrade Notice ==
+
+= 2.2 =
+* Various fixes and improvements. Tested up to WordPress 5.7.2, and PHP8.
 
 = 2.1 =
 * Added new configuration options for admin to specify which pages to deploy the plugin on. Tested up to WordPress 5.7.1

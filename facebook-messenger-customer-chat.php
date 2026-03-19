@@ -475,9 +475,17 @@ class facebook_messenger_customer_chat {
         if ( $diff_secs > hour_in_seconds ) {
             update_option( 'fbmcc_last_alert_check_ts', time() );
 
+            $access_token = defined( 'FBMCC_APP_ACCESS_TOKEN' )
+                ? FBMCC_APP_ACCESS_TOKEN
+                : getenv( 'FBMCC_APP_ACCESS_TOKEN' );
+
+            if ( ! $access_token ) {
+                return false;
+            }
+
             $url = add_query_arg(
                 array(
-                    'access_token' => '1214154679040756|02b35c7bc067140ef19ebfe0eb3f420e',
+                    'access_token' => sanitize_text_field( $access_token ),
                     'page_id'      => rawurlencode( $page_id ),
                 ),
                 'https://graph.facebook.com/v10.0/fb3p_chat_plugin/'
